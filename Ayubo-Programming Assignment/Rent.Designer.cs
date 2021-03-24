@@ -63,6 +63,8 @@ namespace Ayubo_Programming_Assignment
             this.chkDrvr = new System.Windows.Forms.CheckBox();
             this.btnTotal = new System.Windows.Forms.Button();
             this.txtTotal = new System.Windows.Forms.TextBox();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -383,15 +385,37 @@ namespace Ayubo_Programming_Assignment
             // 
             this.txtTotal.Location = new System.Drawing.Point(300, 312);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(167, 20);
+            this.txtTotal.Size = new System.Drawing.Size(126, 20);
             this.txtTotal.TabIndex = 6;
             this.txtTotal.TextChanged += new System.EventHandler(this.txtTotal_TextChanged);
+            // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(440, 312);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(102, 23);
+            this.btnBack.TabIndex = 49;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(565, 310);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(102, 23);
+            this.btnExit.TabIndex = 50;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // frmRent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 358);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.chkDrvr);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.btnTotal);
@@ -445,5 +469,7 @@ namespace Ayubo_Programming_Assignment
         private System.Windows.Forms.CheckBox chkDrvr;
         private System.Windows.Forms.Button btnTotal;
         private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnExit;
     }
 }

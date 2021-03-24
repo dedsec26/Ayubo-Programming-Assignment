@@ -101,5 +101,12 @@ namespace Ayubo_Programming_Assignment
         {
             clear();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmPackage frmPackage = new frmPackage();
+            frmPackage.Show();
+            Dispose();
+        }
     }
 }

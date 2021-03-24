@@ -1,7 +1,7 @@
 ﻿
 namespace Ayubo_Programming_Assignment
 {
-    partial class Form6
+    partial class frmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -78,7 +78,7 @@ namespace Ayubo_Programming_Assignment
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // Form6
+            // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -88,8 +88,8 @@ namespace Ayubo_Programming_Assignment
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form6";
-            this.Text = "Form6";
+            this.Name = "frmLogin";
+            this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 

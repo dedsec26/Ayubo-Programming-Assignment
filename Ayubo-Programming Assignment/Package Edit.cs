@@ -285,5 +285,12 @@ namespace Ayubo_Programming_Assignment
         {
 
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmPackage frmPackage = new frmPackage();
+            frmPackage.Show();
+            Dispose();
+        }
     }
 }

@@ -11,11 +11,11 @@ using System.Data.SqlClient;
 
 namespace Ayubo_Programming_Assignment
 {
-    public partial class Form6 : Form
+    public partial class frmLogin : Form
     {
         SqlConnection sqlConnection = new SqlConnection("Data Source=Aflal-PC;Initial Catalog=ayubodrive;Integrated Security=True");
         //SqlConnection sqlConnection1 = new SqlConnection("Data Source=Aflal-PC;Initial Catalog=ayubodrive;Integrated Security=True");
-        public Form6()
+        public frmLogin()
         {
             InitializeComponent();
         }
@@ -50,6 +50,9 @@ namespace Ayubo_Programming_Assignment
                         MessageBox.Show("Login Successful");
                         sqlConnection.Close();
                         //sqlConnection1.Close();
+                        frmHome frmHome = new frmHome();
+                        frmHome.Show();
+                        Dispose(false);
                         
 
                     }

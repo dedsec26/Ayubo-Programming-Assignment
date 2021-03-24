@@ -151,5 +151,13 @@ namespace Ayubo_Programming_Assignment
             txtModel.Enabled = true;
             txtDay.Enabled = true;
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            
+            frmVehicle frmVehicle = new frmVehicle();
+            frmVehicle.Show();
+            Dispose();
+        }
     }
 }

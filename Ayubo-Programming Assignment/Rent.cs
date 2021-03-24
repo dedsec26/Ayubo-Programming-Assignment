@@ -150,5 +150,17 @@ namespace Ayubo_Programming_Assignment
         {
 
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmHome frmHome = new frmHome();
+            frmHome.Show();
+            Dispose();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

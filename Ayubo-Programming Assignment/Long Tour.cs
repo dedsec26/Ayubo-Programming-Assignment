@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 
 namespace Ayubo_Programming_Assignment
 {
-    public partial class Form5 : Form
+    public partial class frmLongTour : Form
     {
         SqlConnection sqlConnection = new SqlConnection("Data Source=Aflal-PC;Initial Catalog=ayubodrive;Integrated Security=True");
         private void combo()
@@ -59,7 +59,7 @@ namespace Ayubo_Programming_Assignment
             txtEndRd.Clear();
           
         }
-        public Form5()
+        public frmLongTour()
         {
             InitializeComponent();
         }
@@ -117,37 +117,45 @@ namespace Ayubo_Programming_Assignment
             DateTime start, end;
             TimeSpan ts;
             int days;
-            double pk, pktotal, ndriver, nvehicle, ntotal; 
+            double pk, pktotal, ndriver, nvehicle, ntotal;
             //months, weeks, finaldays, remainder;
-            start = DateTime.Parse(dtimeStart.Text);
-            end = DateTime.Parse(dtimeEnd.Text);
-            ts = end - start;
-            days = ts.Days;
-            if (days <= 0)
+            if (string.IsNullOrEmpty(dtimeStart.Text) | string.IsNullOrEmpty(dtimeEnd.Text))
             {
-                txtTdays.Text = "0";
-                MessageBox.Show("Please insert Valid Dates");
-                
+                MessageBox.Show("Please Select Number Of Days.");
             }
             else
             {
-                
-                if (string.IsNullOrEmpty(txtPKRt.Text) | string.IsNullOrWhiteSpace(txtPKRt.Text))
+                start = DateTime.Parse(dtimeStart.Text);
+                end = DateTime.Parse(dtimeEnd.Text);
+                ts = end - start;
+                days = ts.Days;
+                if (days <= 0)
                 {
-                    MessageBox.Show("Please Select a Package Before Calculating Number of Days");
+                    txtTdays.Text = "0";
+                    MessageBox.Show("Please insert Valid Dates");
+
                 }
                 else
                 {
-                    pk = Double.Parse(txtPKRt.Text);
-                    pktotal = days * pk;
-                    txtPKCost.Text = pktotal.ToString();
-                    ndriver = Double.Parse(txtDrN.Text);
-                    nvehicle = Double.Parse(txtVhN.Text);
-                    ntotal = (ndriver + nvehicle) * (days - 1);
-                    txtNightCost.Text = ntotal.ToString();
-                    txtTdays.Text = days.ToString();
+
+                    if (string.IsNullOrEmpty(txtPKRt.Text) | string.IsNullOrWhiteSpace(txtPKRt.Text))
+                    {
+                        MessageBox.Show("Please Select a Package Before Calculating Number of Days");
+                    }
+                    else
+                    {
+                        pk = Double.Parse(txtPKRt.Text);
+                        pktotal = days * pk;
+                        txtPKCost.Text = pktotal.ToString();
+                        ndriver = Double.Parse(txtDrN.Text);
+                        nvehicle = Double.Parse(txtVhN.Text);
+                        ntotal = (ndriver + nvehicle) * (days - 1);
+                        txtNightCost.Text = ntotal.ToString();
+                        txtTdays.Text = days.ToString();
+                    }
                 }
             }
+            
             
             
             
@@ -159,80 +167,89 @@ namespace Ayubo_Programming_Assignment
             
             int start, end, max, extra, current, days, dayszero;
             double excost, finex;
-            dayszero = Int16.Parse(txtTdays.Text);
-            if (string.IsNullOrEmpty(txtTdays.Text) | string.IsNullOrWhiteSpace(txtTdays.Text))
+            
+            if (string.IsNullOrEmpty(txtTdays.Text))
             {
-                MessageBox.Show("Please Select Valid Dates Before Calculating Distance");
-            }
-            else if (dayszero <= 0)
-            {
-                MessageBox.Show("Please Select Valid Dates Before Calculating Distance");
+                MessageBox.Show("Please Select Duraion Before Calculating Distance.");
             }
             else
             {
-                if ((string.IsNullOrEmpty(txtStRd.Text)) | (string.IsNullOrWhiteSpace(txtStRd.Text)))
+                dayszero = Int16.Parse(txtTdays.Text);
+                if (string.IsNullOrEmpty(txtTdays.Text) | string.IsNullOrWhiteSpace(txtTdays.Text))
                 {
-                    start = 0;
+                    MessageBox.Show("Please Select Valid Dates Before Calculating Distance.");
+                }
+                else if (dayszero <= 0)
+                {
+                    MessageBox.Show("Please Select Valid Dates Before Calculating Distance.");
                 }
                 else
                 {
-                    start = Int16.Parse(txtStRd.Text);
-                }
-                if ((string.IsNullOrEmpty(txtEndRd.Text)) | (string.IsNullOrWhiteSpace(txtEndRd.Text)))
-                {
-                    MessageBox.Show("Please Enter Valid Journey End Meter Reading");
-                }
-                else
-                {
-                    end = Int16.Parse(txtEndRd.Text);
-                    if ((string.IsNullOrWhiteSpace(txtMxDist.Text)) | (string.IsNullOrEmpty(txtMxDist.Text)))
+                    if ((string.IsNullOrEmpty(txtStRd.Text)) | (string.IsNullOrWhiteSpace(txtStRd.Text)))
                     {
-                        MessageBox.Show("Please Select a Package Before Calculating Distance");
+                        start = 0;
                     }
                     else
                     {
-                        max = Int16.Parse(txtMxDist.Text);
-                        current = end - start;
-                        txtTKm.Text = current.ToString();
-                        excost = Double.Parse(txtXtrDist.Text);
-                        if (string.IsNullOrEmpty(txtTdays.Text) | string.IsNullOrWhiteSpace(txtTdays.Text))
+                        start = Int16.Parse(txtStRd.Text);
+                    }
+                    if ((string.IsNullOrEmpty(txtEndRd.Text)) | (string.IsNullOrWhiteSpace(txtEndRd.Text)))
+                    {
+                        MessageBox.Show("Please Enter Valid Journey End Meter Reading");
+                    }
+                    else
+                    {
+                        end = Int16.Parse(txtEndRd.Text);
+                        if ((string.IsNullOrWhiteSpace(txtMxDist.Text)) | (string.IsNullOrEmpty(txtMxDist.Text)))
                         {
-                            MessageBox.Show("Please Select Start and End Dates Before Calculating Distance");
+                            MessageBox.Show("Please Select a Package Before Calculating Distance");
                         }
                         else
                         {
-                            days = Int16.Parse(txtTdays.Text);
-
-                            if (current > max)
+                            max = Int16.Parse(txtMxDist.Text);
+                            current = end - start;
+                            txtTKm.Text = current.ToString();
+                            excost = Double.Parse(txtXtrDist.Text);
+                            if (string.IsNullOrEmpty(txtTdays.Text) | string.IsNullOrWhiteSpace(txtTdays.Text))
                             {
-                                extra = current - (max * days);
-                                finex = extra * excost;
-                                txtXtrKm.Text = extra.ToString();
-                                txtKmCost.Text = finex.ToString();
-                            }
-                            else if (current < 0)
-                            {
-                                current = 0;
-                                txtTKm.Text = current.ToString();
-                                finex = 0;
-                                txtKmCost.Text = finex.ToString();
-                                extra = 0;
-                                txtXtrKm.Text = extra.ToString();
-
+                                MessageBox.Show("Please Select Start and End Dates Before Calculating Distance");
                             }
                             else
                             {
-                                finex = 0;
-                                txtKmCost.Text = finex.ToString();
-                                extra = 0;
-                                txtXtrKm.Text = extra.ToString();
+                                days = Int16.Parse(txtTdays.Text);
+
+                                if (current > max)
+                                {
+                                    extra = current - (max * days);
+                                    finex = extra * excost;
+                                    txtXtrKm.Text = extra.ToString();
+                                    txtKmCost.Text = finex.ToString();
+                                }
+                                else if (current < 0)
+                                {
+                                    current = 0;
+                                    txtTKm.Text = current.ToString();
+                                    finex = 0;
+                                    txtKmCost.Text = finex.ToString();
+                                    extra = 0;
+                                    txtXtrKm.Text = extra.ToString();
+
+                                }
+                                else
+                                {
+                                    finex = 0;
+                                    txtKmCost.Text = finex.ToString();
+                                    extra = 0;
+                                    txtXtrKm.Text = extra.ToString();
+                                }
                             }
                         }
+
+
                     }
-
-
                 }
             }
+            
             
             
             
@@ -277,6 +294,18 @@ namespace Ayubo_Programming_Assignment
         private void btnClear_Click(object sender, EventArgs e)
         {
             clear();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmTour frmTour = new frmTour();
+            frmTour.Show();
+            Dispose();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

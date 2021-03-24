@@ -82,5 +82,13 @@ namespace Ayubo_Programming_Assignment
         {
             clear();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            
+            frmVehicle frmVehicle = new frmVehicle();
+            frmVehicle.Show();
+            Dispose();
+        }
     }
 }

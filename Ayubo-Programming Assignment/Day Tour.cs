@@ -247,5 +247,17 @@ namespace Ayubo_Programming_Assignment
         {
 
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmTour frmTour = new frmTour();
+            frmTour.Show();
+            Dispose();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

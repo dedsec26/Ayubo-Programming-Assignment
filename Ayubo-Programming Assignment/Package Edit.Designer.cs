@@ -53,6 +53,7 @@ namespace Ayubo_Programming_Assignment
             this.txtVhN = new System.Windows.Forms.TextBox();
             this.txtPKRt = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnPKDelete
@@ -276,11 +277,22 @@ namespace Ayubo_Programming_Assignment
             this.label10.Text = "Rate";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(113, 402);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(102, 23);
+            this.btnBack.TabIndex = 49;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // frmPackageEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(329, 410);
+            this.ClientSize = new System.Drawing.Size(329, 437);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnPKDelete);
             this.Controls.Add(this.comboPkID);
             this.Controls.Add(this.txtVhN);
@@ -339,5 +351,6 @@ namespace Ayubo_Programming_Assignment
         private System.Windows.Forms.TextBox txtVhN;
         private System.Windows.Forms.TextBox txtPKRt;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btnBack;
     }
 }

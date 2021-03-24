@@ -1,7 +1,7 @@
 ﻿
 namespace Ayubo_Programming_Assignment
 {
-    partial class Form5
+    partial class frmLongTour
     {
         /// <summary>
         /// Required designer variable.
@@ -57,7 +57,6 @@ namespace Ayubo_Programming_Assignment
             this.label22 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.btnKMCal = new System.Windows.Forms.Button();
-            this.txtKmCost = new System.Windows.Forms.TextBox();
             this.txtXtrKm = new System.Windows.Forms.TextBox();
             this.txtTKm = new System.Windows.Forms.TextBox();
             this.txtEndRd = new System.Windows.Forms.TextBox();
@@ -66,16 +65,19 @@ namespace Ayubo_Programming_Assignment
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
+            this.txtKmCost = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.btnTotal = new System.Windows.Forms.Button();
+            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.txtNightCost = new System.Windows.Forms.TextBox();
+            this.txtPKCost = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtPKCost = new System.Windows.Forms.TextBox();
-            this.txtNightCost = new System.Windows.Forms.TextBox();
-            this.txtTotal = new System.Windows.Forms.TextBox();
-            this.btnTotal = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -106,7 +108,7 @@ namespace Ayubo_Programming_Assignment
             this.groupBox1.Size = new System.Drawing.Size(302, 263);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Package";
             // 
             // comboPkID
             // 
@@ -262,7 +264,7 @@ namespace Ayubo_Programming_Assignment
             this.groupBox3.Size = new System.Drawing.Size(362, 144);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
+            this.groupBox3.Text = "Duration";
             // 
             // btnCalculate
             // 
@@ -339,7 +341,7 @@ namespace Ayubo_Programming_Assignment
             this.groupBox4.Size = new System.Drawing.Size(362, 163);
             this.groupBox4.TabIndex = 7;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "groupBox4";
+            this.groupBox4.Text = "Distance";
             // 
             // btnKMCal
             // 
@@ -350,13 +352,6 @@ namespace Ayubo_Programming_Assignment
             this.btnKMCal.Text = "Calculate";
             this.btnKMCal.UseVisualStyleBackColor = true;
             this.btnKMCal.Click += new System.EventHandler(this.btnKMCal_Click);
-            // 
-            // txtKmCost
-            // 
-            this.txtKmCost.Location = new System.Drawing.Point(143, 71);
-            this.txtKmCost.Name = "txtKmCost";
-            this.txtKmCost.Size = new System.Drawing.Size(100, 20);
-            this.txtKmCost.TabIndex = 2;
             // 
             // txtXtrKm
             // 
@@ -423,6 +418,13 @@ namespace Ayubo_Programming_Assignment
             this.label28.TabIndex = 0;
             this.label28.Text = "Start Meter Reading";
             // 
+            // txtKmCost
+            // 
+            this.txtKmCost.Location = new System.Drawing.Point(143, 71);
+            this.txtKmCost.Name = "txtKmCost";
+            this.txtKmCost.Size = new System.Drawing.Size(100, 20);
+            this.txtKmCost.TabIndex = 2;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnTotal);
@@ -439,16 +441,48 @@ namespace Ayubo_Programming_Assignment
             this.groupBox2.Size = new System.Drawing.Size(258, 184);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.groupBox2.Text = "Total Cost";
             // 
-            // label5
+            // btnTotal
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 52);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 13);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Night Stay Cost";
+            this.btnTotal.Location = new System.Drawing.Point(6, 139);
+            this.btnTotal.Name = "btnTotal";
+            this.btnTotal.Size = new System.Drawing.Size(237, 23);
+            this.btnTotal.TabIndex = 4;
+            this.btnTotal.Text = "Calculate Total Cost";
+            this.btnTotal.UseVisualStyleBackColor = true;
+            this.btnTotal.Click += new System.EventHandler(this.btnTotal_Click);
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.Location = new System.Drawing.Point(143, 97);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(100, 20);
+            this.txtTotal.TabIndex = 3;
+            // 
+            // txtNightCost
+            // 
+            this.txtNightCost.Location = new System.Drawing.Point(143, 45);
+            this.txtNightCost.Name = "txtNightCost";
+            this.txtNightCost.Size = new System.Drawing.Size(100, 20);
+            this.txtNightCost.TabIndex = 3;
+            // 
+            // txtPKCost
+            // 
+            this.txtPKCost.Location = new System.Drawing.Point(143, 19);
+            this.txtPKCost.Name = "txtPKCost";
+            this.txtPKCost.Size = new System.Drawing.Size(100, 20);
+            this.txtPKCost.TabIndex = 3;
+            this.txtPKCost.TextChanged += new System.EventHandler(this.txtPKCost_TextChanged);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(3, 104);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(55, 13);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Total Cost";
             // 
             // label7
             // 
@@ -468,69 +502,59 @@ namespace Ayubo_Programming_Assignment
             this.label11.TabIndex = 1;
             this.label11.Text = "Package Cost";
             // 
-            // label12
+            // label5
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(3, 104);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(55, 13);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Total Cost";
-            // 
-            // txtPKCost
-            // 
-            this.txtPKCost.Location = new System.Drawing.Point(143, 19);
-            this.txtPKCost.Name = "txtPKCost";
-            this.txtPKCost.Size = new System.Drawing.Size(100, 20);
-            this.txtPKCost.TabIndex = 3;
-            this.txtPKCost.TextChanged += new System.EventHandler(this.txtPKCost_TextChanged);
-            // 
-            // txtNightCost
-            // 
-            this.txtNightCost.Location = new System.Drawing.Point(143, 45);
-            this.txtNightCost.Name = "txtNightCost";
-            this.txtNightCost.Size = new System.Drawing.Size(100, 20);
-            this.txtNightCost.TabIndex = 3;
-            // 
-            // txtTotal
-            // 
-            this.txtTotal.Location = new System.Drawing.Point(143, 97);
-            this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(100, 20);
-            this.txtTotal.TabIndex = 3;
-            // 
-            // btnTotal
-            // 
-            this.btnTotal.Location = new System.Drawing.Point(6, 139);
-            this.btnTotal.Name = "btnTotal";
-            this.btnTotal.Size = new System.Drawing.Size(237, 23);
-            this.btnTotal.TabIndex = 4;
-            this.btnTotal.Text = "Calculate Total Cost";
-            this.btnTotal.UseVisualStyleBackColor = true;
-            this.btnTotal.Click += new System.EventHandler(this.btnTotal_Click);
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 52);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(80, 13);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Night Stay Cost";
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(699, 221);
+            this.btnClear.Location = new System.Drawing.Point(685, 221);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.Size = new System.Drawing.Size(100, 23);
             this.btnClear.TabIndex = 9;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // Form5
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(685, 271);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(100, 23);
+            this.btnBack.TabIndex = 10;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(822, 271);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(100, 23);
+            this.btnExit.TabIndex = 10;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // frmLongTour
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1005, 634);
+            this.ClientSize = new System.Drawing.Size(1005, 352);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form5";
-            this.Text = "Form5";
+            this.Name = "frmLongTour";
+            this.Text = "Long Tour";
             this.Load += new System.EventHandler(this.Form5_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -593,5 +617,7 @@ namespace Ayubo_Programming_Assignment
         private System.Windows.Forms.TextBox txtNightCost;
         private System.Windows.Forms.TextBox txtPKCost;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnExit;
     }
 }
