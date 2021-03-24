@@ -64,11 +64,11 @@
     <Compile Include="Vehicle Add.Designer.cs">
       <DependentUpon>Vehicle Add.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="Rent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Rent.Designer.cs">
+      <DependentUpon>Rent.cs</DependentUpon>
     </Compile>
     <Compile Include="Package Edit.cs">
       <SubType>Form</SubType>
@@ -76,11 +76,11 @@
     <Compile Include="Package Edit.Designer.cs">
       <DependentUpon>Package Edit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="Day Tour.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="Day Tour.Designer.cs">
+      <DependentUpon>Day Tour.cs</DependentUpon>
     </Compile>
     <Compile Include="Form5.cs">
       <SubType>Form</SubType>
@@ -135,14 +135,14 @@
     <EmbeddedResource Include="Vehicle Add.resx">
       <DependentUpon>Vehicle Add.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Rent.resx">
+      <DependentUpon>Rent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Package Edit.resx">
       <DependentUpon>Package Edit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="Day Tour.resx">
+      <DependentUpon>Day Tour.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>

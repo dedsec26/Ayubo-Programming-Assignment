@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 
 namespace Ayubo_Programming_Assignment
 {
-    public partial class Form2 : Form
+    public partial class frmRent : Form
     {
         SqlConnection sqlConnection = new SqlConnection("Data Source=Aflal-PC;Initial Catalog=ayubodrive;Integrated Security=True");
         private void combo()
@@ -23,7 +23,7 @@ namespace Ayubo_Programming_Assignment
             comboReg.DisplayMember = "reg_no";
             comboReg.ValueMember = "reg_no";
         }
-        public Form2()
+        public frmRent()
         {
             InitializeComponent();
         }
@@ -115,26 +115,35 @@ namespace Ayubo_Programming_Assignment
 
         private void btnTotal_Click(object sender, EventArgs e)
         {
-            double total;
-            double nmonths = Convert.ToDouble(txtNMonths.Text);
-            double month =  Convert.ToDouble(txtMonth.Text);
-            double ndays=  Convert.ToDouble(txtNDays.Text);
-            double day =  Convert.ToDouble(txtDay.Text);
-            double week =  Convert.ToDouble(txtWeek.Text);
-            double nweek = Convert.ToDouble(txtNWeeks.Text);
-            double tday =  Convert.ToDouble(txtTdays.Text);
-            double driver = Convert.ToDouble(txtDriver.Text);
-            if (chkDrvr.Checked == true)
+            if (string.IsNullOrEmpty(txtDay.Text) | string.IsNullOrEmpty(txtNMonths.Text) | string.IsNullOrEmpty(txtMonth.Text) | string.IsNullOrEmpty(txtNDays.Text) | 
+                string.IsNullOrEmpty(txtWeek.Text) | string.IsNullOrEmpty(txtNWeeks.Text) | string.IsNullOrEmpty(txtTdays.Text) | string.IsNullOrEmpty(txtDriver.Text))
             {
-                total = (nmonths * month) + (ndays * day) + (week * nweek) + (tday * driver);
-                txtTotal.Text = total.ToString();
-                
+                MessageBox.Show("Please Select Number of Days and Vehicle to be Rented.");
             }
             else
             {
-                total = (nmonths * month) + (ndays * day) + (week * nweek);
-                txtTotal.Text = total.ToString();
+                double total;
+                double nmonths = Convert.ToDouble(txtNMonths.Text);
+                double month = Convert.ToDouble(txtMonth.Text);
+                double ndays = Convert.ToDouble(txtNDays.Text);
+                double day = Convert.ToDouble(txtDay.Text);
+                double week = Convert.ToDouble(txtWeek.Text);
+                double nweek = Convert.ToDouble(txtNWeeks.Text);
+                double tday = Convert.ToDouble(txtTdays.Text);
+                double driver = Convert.ToDouble(txtDriver.Text);
+                if (chkDrvr.Checked == true)
+                {
+                    total = (nmonths * month) + (ndays * day) + (week * nweek) + (tday * driver);
+                    txtTotal.Text = total.ToString();
+
+                }
+                else
+                {
+                    total = (nmonths * month) + (ndays * day) + (week * nweek);
+                    txtTotal.Text = total.ToString();
+                }
             }
+            
         }
 
         private void txtTotal_TextChanged(object sender, EventArgs e)

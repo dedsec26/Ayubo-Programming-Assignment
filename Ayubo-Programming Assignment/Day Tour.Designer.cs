@@ -1,7 +1,7 @@
 ﻿
 namespace Ayubo_Programming_Assignment
 {
-    partial class Form4
+    partial class frmDayTour
     {
         /// <summary>
         /// Required designer variable.
@@ -64,17 +64,17 @@ namespace Ayubo_Programming_Assignment
             this.label14 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnKMCal = new System.Windows.Forms.Button();
+            this.txtKmCost = new System.Windows.Forms.TextBox();
             this.txtXtrKm = new System.Windows.Forms.TextBox();
             this.txtTKm = new System.Windows.Forms.TextBox();
             this.txtEndRd = new System.Windows.Forms.TextBox();
             this.txtStRd = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.btnKMCal = new System.Windows.Forms.Button();
-            this.label20 = new System.Windows.Forms.Label();
-            this.txtKmCost = new System.Windows.Forms.TextBox();
             this.txtTotalCost = new System.Windows.Forms.TextBox();
             this.btnTotalCost = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -110,7 +110,7 @@ namespace Ayubo_Programming_Assignment
             this.groupBox1.Size = new System.Drawing.Size(302, 394);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Package";
             // 
             // comboPkID
             // 
@@ -301,7 +301,7 @@ namespace Ayubo_Programming_Assignment
             this.groupBox2.Size = new System.Drawing.Size(301, 196);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.groupBox2.Text = "Duration";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // btnHrCal
@@ -417,7 +417,25 @@ namespace Ayubo_Programming_Assignment
             this.groupBox3.Size = new System.Drawing.Size(301, 185);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
+            this.groupBox3.Text = "Distance";
+            // 
+            // btnKMCal
+            // 
+            this.btnKMCal.Location = new System.Drawing.Point(5, 146);
+            this.btnKMCal.Name = "btnKMCal";
+            this.btnKMCal.Size = new System.Drawing.Size(283, 23);
+            this.btnKMCal.TabIndex = 3;
+            this.btnKMCal.Text = "Calculate";
+            this.btnKMCal.UseVisualStyleBackColor = true;
+            this.btnKMCal.Click += new System.EventHandler(this.btnKMCal_Click);
+            // 
+            // txtKmCost
+            // 
+            this.txtKmCost.Location = new System.Drawing.Point(188, 120);
+            this.txtKmCost.Name = "txtKmCost";
+            this.txtKmCost.Size = new System.Drawing.Size(100, 20);
+            this.txtKmCost.TabIndex = 2;
+            this.txtKmCost.TextChanged += new System.EventHandler(this.txtXtrKm_TextChanged);
             // 
             // txtXtrKm
             // 
@@ -447,6 +465,15 @@ namespace Ayubo_Programming_Assignment
             this.txtStRd.Name = "txtStRd";
             this.txtStRd.Size = new System.Drawing.Size(100, 20);
             this.txtStRd.TabIndex = 2;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(3, 127);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(94, 13);
+            this.label20.TabIndex = 1;
+            this.label20.Text = "Cost for Extra KMs";
             // 
             // label18
             // 
@@ -484,33 +511,6 @@ namespace Ayubo_Programming_Assignment
             this.label13.TabIndex = 0;
             this.label13.Text = "Start Meter Reading";
             // 
-            // btnKMCal
-            // 
-            this.btnKMCal.Location = new System.Drawing.Point(5, 146);
-            this.btnKMCal.Name = "btnKMCal";
-            this.btnKMCal.Size = new System.Drawing.Size(283, 23);
-            this.btnKMCal.TabIndex = 3;
-            this.btnKMCal.Text = "Calculate";
-            this.btnKMCal.UseVisualStyleBackColor = true;
-            this.btnKMCal.Click += new System.EventHandler(this.btnKMCal_Click);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(3, 127);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(94, 13);
-            this.label20.TabIndex = 1;
-            this.label20.Text = "Cost for Extra KMs";
-            // 
-            // txtKmCost
-            // 
-            this.txtKmCost.Location = new System.Drawing.Point(188, 120);
-            this.txtKmCost.Name = "txtKmCost";
-            this.txtKmCost.Size = new System.Drawing.Size(100, 20);
-            this.txtKmCost.TabIndex = 2;
-            this.txtKmCost.TextChanged += new System.EventHandler(this.txtXtrKm_TextChanged);
-            // 
             // txtTotalCost
             // 
             this.txtTotalCost.Location = new System.Drawing.Point(336, 425);
@@ -528,7 +528,7 @@ namespace Ayubo_Programming_Assignment
             this.btnTotalCost.UseVisualStyleBackColor = true;
             this.btnTotalCost.Click += new System.EventHandler(this.btnTotalCost_Click);
             // 
-            // Form4
+            // frmDayTour
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -538,8 +538,8 @@ namespace Ayubo_Programming_Assignment
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form4";
-            this.Text = "Form4";
+            this.Name = "frmDayTour";
+            this.Text = "Day Tour";
             this.Load += new System.EventHandler(this.Form4_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

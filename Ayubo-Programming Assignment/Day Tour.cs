@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 
 namespace Ayubo_Programming_Assignment
 {
-    public partial class Form4 : Form
+    public partial class frmDayTour : Form
 
     {
         SqlConnection sqlConnection = new SqlConnection("Data Source=Aflal-PC;Initial Catalog=ayubodrive;Integrated Security=True");
@@ -55,7 +55,7 @@ namespace Ayubo_Programming_Assignment
             txtKmCost.Enabled = false;
             txtTotalCost.Enabled = false;
         }
-        public Form4()
+        public frmDayTour()
         {
             InitializeComponent();
         }
@@ -107,40 +107,48 @@ namespace Ayubo_Programming_Assignment
             DateTime start, end;
             TimeSpan ts;
             int hours, max, extra;
-            double excost,cost;
-            start = DateTime.Parse(dtimeStart.Text);
-            end = DateTime.Parse(dtimeEnd.Text);
-            ts = end - start;
-            hours = ts.Hours;
-            txtNHrs.Text = hours.ToString();
-            max = Int16.Parse(txtMxDur.Text);
-            excost = Double.Parse(txtXtrDur.Text);
-            if (hours > max)
+            double excost, cost;
+            if (string.IsNullOrEmpty(txtXtrDur.Text) | string.IsNullOrEmpty(txtMxDur.Text))
             {
-                extra = hours - max;
-                txtXHrs.Text = extra.ToString();
-                cost = extra * excost;
-                txtCostXt.Text = cost.ToString();
-
-            }
-            else if (hours < 0)
-            {
-                hours = 0;
-                txtNHrs.Text = hours.ToString();
-                cost = 0;
-                txtCostXt.Text = cost.ToString();
-                extra = 0;
-                txtXHrs.Text = extra.ToString();
+                MessageBox.Show("Please Select a Package Before Calculating Duration Cost.");
             }
             else
             {
-                
+                start = DateTime.Parse(dtimeStart.Text);
+                end = DateTime.Parse(dtimeEnd.Text);
+                ts = end - start;
+                hours = ts.Hours;
+                txtNHrs.Text = hours.ToString();
+                max = Int16.Parse(txtMxDur.Text);
+                excost = Double.Parse(txtXtrDur.Text);
+                if (hours > max)
+                {
+                    extra = hours - max;
+                    txtXHrs.Text = extra.ToString();
+                    cost = extra * excost;
+                    txtCostXt.Text = cost.ToString();
 
-                cost = 0;
-                txtCostXt.Text = cost.ToString();
-                extra = 0;
-                txtXHrs.Text = extra.ToString();
+                }
+                else if (hours < 0)
+                {
+                    hours = 0;
+                    txtNHrs.Text = hours.ToString();
+                    cost = 0;
+                    txtCostXt.Text = cost.ToString();
+                    extra = 0;
+                    txtXHrs.Text = extra.ToString();
+                }
+                else
+                {
+
+
+                    cost = 0;
+                    txtCostXt.Text = cost.ToString();
+                    extra = 0;
+                    txtXHrs.Text = extra.ToString();
+                }
             }
+            
 
             
 
@@ -162,37 +170,53 @@ namespace Ayubo_Programming_Assignment
         {
             int start, end, max, extra, current;
             double excost,finex;
-            start = Int16.Parse(txtStRd.Text);
-            end = Int16.Parse(txtEndRd.Text);
-            max = Int16.Parse(txtMxDist.Text);
-            current = end - start;
-            txtTKm.Text = current.ToString();
-            excost = Double.Parse(txtXtrDist.Text);
-            
-            if (current > max)
+            if (string.IsNullOrEmpty(txtMxDist.Text) | string.IsNullOrEmpty(txtXtrDist.Text))
             {
-                extra = current - max;
-                finex = extra * excost;
-                txtXtrKm.Text = extra.ToString();
-                txtKmCost.Text = finex.ToString();
-            }
-            else if (current < 0)
-            {
-                current = 0;
-                txtTKm.Text = current.ToString();
-                finex = 0;
-                txtKmCost.Text = finex.ToString();
-                extra = 0;
-                txtXtrKm.Text = extra.ToString();
-
+                MessageBox.Show("Please Select a Package Before Calculating Distance Cost");
             }
             else
             {
-                finex = 0;
-                txtKmCost.Text = finex.ToString();
-                extra = 0;
-                txtXtrKm.Text = extra.ToString();
+                if (string.IsNullOrEmpty(txtStRd.Text))
+                {
+                    start = 0;
+                }
+                else
+                {
+                    start = Int16.Parse(txtStRd.Text);
+                }
+                //start = Int16.Parse(txtStRd.Text);
+                end = Int16.Parse(txtEndRd.Text);
+                max = Int16.Parse(txtMxDist.Text);
+                current = end - start;
+                txtTKm.Text = current.ToString();
+                excost = Double.Parse(txtXtrDist.Text);
+
+                if (current > max)
+                {
+                    extra = current - max;
+                    finex = extra * excost;
+                    txtXtrKm.Text = extra.ToString();
+                    txtKmCost.Text = finex.ToString();
+                }
+                else if (current < 0)
+                {
+                    current = 0;
+                    txtTKm.Text = current.ToString();
+                    finex = 0;
+                    txtKmCost.Text = finex.ToString();
+                    extra = 0;
+                    txtXtrKm.Text = extra.ToString();
+
+                }
+                else
+                {
+                    finex = 0;
+                    txtKmCost.Text = finex.ToString();
+                    extra = 0;
+                    txtXtrKm.Text = extra.ToString();
+                }
             }
+            
 
         }
 
@@ -204,11 +228,19 @@ namespace Ayubo_Programming_Assignment
         private void btnTotalCost_Click(object sender, EventArgs e)
         {
             double package, hours, kms , final;
-            package = Double.Parse(txtPKRt.Text);
-            hours = Double.Parse(txtCostXt.Text);
-            kms = Double.Parse(txtKmCost.Text);
-            final = package + hours + kms;
-            txtTotalCost.Text = final.ToString();
+            if (string.IsNullOrEmpty(txtPKRt.Text) | string.IsNullOrEmpty(txtCostXt.Text) | string.IsNullOrEmpty(txtKmCost.Text))
+            {
+                MessageBox.Show("Please Select Package, Duration and Distance Before Calculating Total Cost.");
+            }
+            else
+            {
+                package = Double.Parse(txtPKRt.Text);
+                hours = Double.Parse(txtCostXt.Text);
+                kms = Double.Parse(txtKmCost.Text);
+                final = package + hours + kms;
+                txtTotalCost.Text = final.ToString();
+            }
+
         }
 
         private void dtimeStart_ValueChanged(object sender, EventArgs e)
