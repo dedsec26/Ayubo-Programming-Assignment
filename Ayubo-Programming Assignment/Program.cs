@@ -16,7 +16,7 @@ namespace Ayubo_Programming_Assignment
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPackageView());
+            Application.Run(new frmPackageEdit());
         }
     }
 }

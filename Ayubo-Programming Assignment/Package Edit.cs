@@ -47,36 +47,38 @@ namespace Ayubo_Programming_Assignment
 
         private void btnPKInsert_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string sql_insert = "insert into package values ('" + txtPKName.Text + "','" + txtVHType.Text + "','" + txtPKRt.Text + "'," +
-               "'" + txtMxDist.Text + "','" + txtMxDur.Text + "','" + txtXtrDist.Text + "','" + txtXtrDur.Text + "','" + txtDrN.Text + "','" + txtVhN.Text + "')";
-                SqlCommand sqlCommand = new SqlCommand(sql_insert, sqlConnection);
-                sqlConnection.Open();
-                sqlCommand.ExecuteNonQuery();
-                MessageBox.Show("Package successfully added");
-                clear();
-                sqlConnection.Close();
-                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("select id from package", sqlConnection);
-                DataTable dataTable = new DataTable();
-                sqlDataAdapter.Fill(dataTable);
-                comboPkID.DataSource = dataTable;
-                comboPkID.DisplayMember = "id";
-                comboPkID.ValueMember = "id";
-                sqlConnection.Close();
-            }
-            catch (Exception ex)
-            {
+            //try
+            //{
+            //    string sql_insert = "insert into package values ('" + txtPKName.Text + "','" + txtVHType.Text + "','" + txtPKRt.Text + "'," +
+            //   "'" + txtMxDist.Text + "','" + txtMxDur.Text + "','" + txtXtrDist.Text + "','" + txtXtrDur.Text + "','" + txtDrN.Text + "','" + txtVhN.Text + "')";
+            //    SqlCommand sqlCommand = new SqlCommand(sql_insert, sqlConnection);
+            //    sqlConnection.Open();
+            //    sqlCommand.ExecuteNonQuery();
+            //    MessageBox.Show("Package successfully added");
+            //    clear();
+            //    sqlConnection.Close();
+            //    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("select id from package", sqlConnection);
+            //    DataTable dataTable = new DataTable();
+            //    sqlDataAdapter.Fill(dataTable);
+            //    comboPkID.DataSource = dataTable;
+            //    comboPkID.DisplayMember = "id";
+            //    comboPkID.ValueMember = "id";
+            //    sqlConnection.Close();
+            //}
+            //catch (Exception ex)
+            //{
 
-                MessageBox.Show(ex.Message);
-                sqlConnection.Close();
-            }
+            //    MessageBox.Show(ex.Message);
+            //    sqlConnection.Close();
+            //}
             
         }
 
         private void Form3_Load(object sender, EventArgs e)
         {
             combo();
+            txtPKName.Enabled = false;
+            txtVHType.Enabled = false;
         }
 
         private void btnPKDelete_Click(object sender, EventArgs e)
@@ -147,8 +149,7 @@ namespace Ayubo_Programming_Assignment
                 txtDrN.Text = dataReader["driver_night_rate"].ToString();
                 txtVhN.Text = dataReader["vehicle_night_rate"].ToString();
                 sqlConnection.Close();
-                txtPKName.Enabled = false;
-                txtVHType.Enabled = false;
+                
 
 
             }

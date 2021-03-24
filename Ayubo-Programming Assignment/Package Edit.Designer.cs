@@ -40,7 +40,6 @@ namespace Ayubo_Programming_Assignment
             this.btnPKClear = new System.Windows.Forms.Button();
             this.btnPKUpdate = new System.Windows.Forms.Button();
             this.btnPKRetrieve = new System.Windows.Forms.Button();
-            this.btnPKInsert = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -58,9 +57,9 @@ namespace Ayubo_Programming_Assignment
             // 
             // btnPKDelete
             // 
-            this.btnPKDelete.Location = new System.Drawing.Point(24, 359);
+            this.btnPKDelete.Location = new System.Drawing.Point(24, 316);
             this.btnPKDelete.Name = "btnPKDelete";
-            this.btnPKDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnPKDelete.Size = new System.Drawing.Size(102, 23);
             this.btnPKDelete.TabIndex = 24;
             this.btnPKDelete.Text = "Delete";
             this.btnPKDelete.UseVisualStyleBackColor = true;
@@ -125,9 +124,9 @@ namespace Ayubo_Programming_Assignment
             // 
             // btnPKClear
             // 
-            this.btnPKClear.Location = new System.Drawing.Point(135, 399);
+            this.btnPKClear.Location = new System.Drawing.Point(24, 359);
             this.btnPKClear.Name = "btnPKClear";
-            this.btnPKClear.Size = new System.Drawing.Size(52, 52);
+            this.btnPKClear.Size = new System.Drawing.Size(102, 23);
             this.btnPKClear.TabIndex = 16;
             this.btnPKClear.Text = "Clear";
             this.btnPKClear.UseVisualStyleBackColor = true;
@@ -135,9 +134,9 @@ namespace Ayubo_Programming_Assignment
             // 
             // btnPKUpdate
             // 
-            this.btnPKUpdate.Location = new System.Drawing.Point(232, 316);
+            this.btnPKUpdate.Location = new System.Drawing.Point(205, 316);
             this.btnPKUpdate.Name = "btnPKUpdate";
-            this.btnPKUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnPKUpdate.Size = new System.Drawing.Size(102, 23);
             this.btnPKUpdate.TabIndex = 15;
             this.btnPKUpdate.Text = "Update";
             this.btnPKUpdate.UseVisualStyleBackColor = true;
@@ -145,23 +144,13 @@ namespace Ayubo_Programming_Assignment
             // 
             // btnPKRetrieve
             // 
-            this.btnPKRetrieve.Location = new System.Drawing.Point(232, 359);
+            this.btnPKRetrieve.Location = new System.Drawing.Point(205, 359);
             this.btnPKRetrieve.Name = "btnPKRetrieve";
-            this.btnPKRetrieve.Size = new System.Drawing.Size(75, 23);
+            this.btnPKRetrieve.Size = new System.Drawing.Size(102, 23);
             this.btnPKRetrieve.TabIndex = 14;
             this.btnPKRetrieve.Text = "Retrieve";
             this.btnPKRetrieve.UseVisualStyleBackColor = true;
             this.btnPKRetrieve.Click += new System.EventHandler(this.btnPKRetrieve_Click);
-            // 
-            // btnPKInsert
-            // 
-            this.btnPKInsert.Location = new System.Drawing.Point(24, 316);
-            this.btnPKInsert.Name = "btnPKInsert";
-            this.btnPKInsert.Size = new System.Drawing.Size(75, 23);
-            this.btnPKInsert.TabIndex = 13;
-            this.btnPKInsert.Text = "Insert";
-            this.btnPKInsert.UseVisualStyleBackColor = true;
-            this.btnPKInsert.Click += new System.EventHandler(this.btnPKInsert_Click);
             // 
             // label7
             // 
@@ -291,7 +280,7 @@ namespace Ayubo_Programming_Assignment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(329, 488);
+            this.ClientSize = new System.Drawing.Size(329, 410);
             this.Controls.Add(this.btnPKDelete);
             this.Controls.Add(this.comboPkID);
             this.Controls.Add(this.txtVhN);
@@ -307,7 +296,6 @@ namespace Ayubo_Programming_Assignment
             this.Controls.Add(this.btnPKUpdate);
             this.Controls.Add(this.btnPKRetrieve);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.btnPKInsert);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -338,7 +326,6 @@ namespace Ayubo_Programming_Assignment
         private System.Windows.Forms.Button btnPKClear;
         private System.Windows.Forms.Button btnPKUpdate;
         private System.Windows.Forms.Button btnPKRetrieve;
-        private System.Windows.Forms.Button btnPKInsert;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
