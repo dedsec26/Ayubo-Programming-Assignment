@@ -1,0 +1,219 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+
+namespace Ayubo_Programming_Assignment
+{
+    public partial class Form4 : Form
+
+    {
+        SqlConnection sqlConnection = new SqlConnection("Data Source=Aflal-PC;Initial Catalog=ayubodrive;Integrated Security=True");
+        private void clear()
+        {
+            txtDrN.Clear();
+            txtMxDist.Clear();
+            txtMxDur.Clear();
+            txtPKName.Clear();
+            txtPKRt.Clear();
+            txtVhN.Clear();
+            txtVHType.Clear();
+            txtXtrDist.Clear();
+            txtXtrDur.Clear();
+        }
+        private void combo()
+        {
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("select id from package", sqlConnection);
+            DataTable dataTable = new DataTable();
+            sqlDataAdapter.Fill(dataTable);
+            comboPkID.DataSource = dataTable;
+            comboPkID.DisplayMember = "id";
+            comboPkID.ValueMember = "id";
+        }
+        private void disable()
+        {
+            txtPKName.Enabled = false;
+            txtVHType.Enabled = false;
+            txtPKRt.Enabled = false;
+            txtMxDist.Enabled = false;
+            txtMxDur.Enabled = false;
+            txtXtrDist.Enabled = false;
+            txtXtrDur.Enabled = false;
+            txtDrN.Enabled = false;
+            txtVhN.Enabled = false;
+            txtNHrs.Enabled = false;
+            txtCostXt.Enabled = false;
+            txtXHrs.Enabled = false;
+            txtTKm.Enabled = false;
+            txtXtrKm.Enabled = false;
+            txtKmCost.Enabled = false;
+            txtTotalCost.Enabled = false;
+        }
+        public Form4()
+        {
+            InitializeComponent();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPKRetrieve_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string sql_retrieve = "select * from package where id = '" + comboPkID.Text + "'";
+                SqlCommand sqlCommand = new SqlCommand(sql_retrieve, sqlConnection);
+                sqlConnection.Open();
+                SqlDataReader dataReader = sqlCommand.ExecuteReader();
+                dataReader.Read();
+                txtPKName.Text = dataReader["name"].ToString();
+                txtVHType.Text = dataReader["vehicle_type"].ToString();
+                txtPKRt.Text = dataReader["rate"].ToString();
+                txtMxDist.Text = dataReader["max_km"].ToString();
+                txtMxDur.Text = dataReader["max_hours"].ToString();
+                txtXtrDist.Text = dataReader["ex_km_rate"].ToString();
+                txtXtrDur.Text = dataReader["ex_hours_rate"].ToString();
+                txtDrN.Text = dataReader["driver_night_rate"].ToString();
+                txtVhN.Text = dataReader["vehicle_night_rate"].ToString();
+                sqlConnection.Close();
+                
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+                sqlConnection.Close();
+            }
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+            combo();
+            disable();
+        }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+            DateTime start, end;
+            TimeSpan ts;
+            int hours, max, extra;
+            double excost,cost;
+            start = DateTime.Parse(dtimeStart.Text);
+            end = DateTime.Parse(dtimeEnd.Text);
+            ts = end - start;
+            hours = ts.Hours;
+            txtNHrs.Text = hours.ToString();
+            max = Int16.Parse(txtMxDur.Text);
+            excost = Double.Parse(txtXtrDur.Text);
+            if (hours > max)
+            {
+                extra = hours - max;
+                txtXHrs.Text = extra.ToString();
+                cost = extra * excost;
+                txtCostXt.Text = cost.ToString();
+
+            }
+            else if (hours < 0)
+            {
+                hours = 0;
+                txtNHrs.Text = hours.ToString();
+                cost = 0;
+                txtCostXt.Text = cost.ToString();
+                extra = 0;
+                txtXHrs.Text = extra.ToString();
+            }
+            else
+            {
+                
+
+                cost = 0;
+                txtCostXt.Text = cost.ToString();
+                extra = 0;
+                txtXHrs.Text = extra.ToString();
+            }
+
+            
+
+            //days = (end - start);
+            
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtXHrs_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnKMCal_Click(object sender, EventArgs e)
+        {
+            int start, end, max, extra, current;
+            double excost,finex;
+            start = Int16.Parse(txtStRd.Text);
+            end = Int16.Parse(txtEndRd.Text);
+            max = Int16.Parse(txtMxDist.Text);
+            current = end - start;
+            txtTKm.Text = current.ToString();
+            excost = Double.Parse(txtXtrDist.Text);
+            
+            if (current > max)
+            {
+                extra = current - max;
+                finex = extra * excost;
+                txtXtrKm.Text = extra.ToString();
+                txtKmCost.Text = finex.ToString();
+            }
+            else if (current < 0)
+            {
+                current = 0;
+                txtTKm.Text = current.ToString();
+                finex = 0;
+                txtKmCost.Text = finex.ToString();
+                extra = 0;
+                txtXtrKm.Text = extra.ToString();
+
+            }
+            else
+            {
+                finex = 0;
+                txtKmCost.Text = finex.ToString();
+                extra = 0;
+                txtXtrKm.Text = extra.ToString();
+            }
+
+        }
+
+        private void txtXtrKm_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTotalCost_Click(object sender, EventArgs e)
+        {
+            double package, hours, kms , final;
+            package = Double.Parse(txtPKRt.Text);
+            hours = Double.Parse(txtCostXt.Text);
+            kms = Double.Parse(txtKmCost.Text);
+            final = package + hours + kms;
+            txtTotalCost.Text = final.ToString();
+        }
+
+        private void dtimeStart_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
