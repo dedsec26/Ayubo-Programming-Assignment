@@ -21,9 +21,9 @@ namespace Ayubo_Programming_Assignment
         {
             
             frmVehicle frmVehicle = new frmVehicle();
-            
+            frmVehicle.MdiParent = this;
             //Hide();
-            this.Dispose(false);
+            //this.Dispose(false);
             //frmVehicle.FormClosed += (s, args) => this.Close();
             //Application.Exit;
             frmVehicle.Show();
@@ -54,6 +54,74 @@ namespace Ayubo_Programming_Assignment
         }
 
         private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void viewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmVehicleView frmVehicleView = new frmVehicleView();
+            frmVehicleView.MdiParent = this;
+            frmVehicleView.Show();
+        }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmVehicleEdit frmVehicleEdit = new frmVehicleEdit();
+            frmVehicleEdit.MdiParent = this;
+            frmVehicleEdit.Show();
+        }
+
+        private void addToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmVehicleAdd frmVehicleAdd = new frmVehicleAdd();
+            frmVehicleAdd.MdiParent = this;
+            frmVehicleAdd.Show();
+        }
+
+        private void viewToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmPackageView frmPackageView = new frmPackageView();
+            frmPackageView.MdiParent = this;
+            frmPackageView.Show();
+        }
+
+        private void editToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmPackageEdit frmPackageEdit = new frmPackageEdit();
+            frmPackageEdit.MdiParent = this;
+            frmPackageEdit.Show();
+        }
+
+        private void addToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmPackageAdd frmPackageAdd = new frmPackageAdd();
+            frmPackageAdd.MdiParent = this;
+            frmPackageAdd.Show();
+        }
+
+        private void rentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRent frmRent = new frmRent();
+            frmRent.MdiParent = this;
+            frmRent.Show();
+        }
+
+        private void dayTourToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDayTour frmDayTour = new frmDayTour();
+            frmDayTour.MdiParent = this;
+            frmDayTour.Show();
+        }
+
+        private void longTourToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLongTour frmLongTour = new frmLongTour();
+            frmLongTour.MdiParent = this;
+            frmLongTour.Show();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
