@@ -45,7 +45,6 @@ namespace Ayubo_Programming_Assignment
             this.txtDriver = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.txtReg = new System.Windows.Forms.TextBox();
-            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -194,22 +193,11 @@ namespace Ayubo_Programming_Assignment
             this.txtReg.TabIndex = 3;
             this.txtReg.TextChanged += new System.EventHandler(this.txtModel_TextChanged);
             // 
-            // btnBack
-            // 
-            this.btnBack.Location = new System.Drawing.Point(90, 250);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(102, 23);
-            this.btnBack.TabIndex = 4;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // frmVehicleAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 290);
-            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.txtDriver);
             this.Controls.Add(this.txtMonth);
             this.Controls.Add(this.txtDay);
@@ -252,7 +240,6 @@ namespace Ayubo_Programming_Assignment
         private System.Windows.Forms.TextBox txtDriver;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.TextBox txtReg;
-        private System.Windows.Forms.Button btnBack;
     }
 }
 

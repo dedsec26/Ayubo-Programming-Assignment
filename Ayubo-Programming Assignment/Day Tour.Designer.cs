@@ -77,8 +77,6 @@ namespace Ayubo_Programming_Assignment
             this.label13 = new System.Windows.Forms.Label();
             this.txtTotalCost = new System.Windows.Forms.TextBox();
             this.btnTotalCost = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnBack = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -530,33 +528,11 @@ namespace Ayubo_Programming_Assignment
             this.btnTotalCost.UseVisualStyleBackColor = true;
             this.btnTotalCost.Click += new System.EventHandler(this.btnTotalCost_Click);
             // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(518, 423);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(100, 23);
-            this.btnExit.TabIndex = 11;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // btnBack
-            // 
-            this.btnBack.Location = new System.Drawing.Point(381, 423);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(100, 23);
-            this.btnBack.TabIndex = 12;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // frmDayTour
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(649, 472);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnTotalCost);
             this.Controls.Add(this.txtTotalCost);
             this.Controls.Add(this.groupBox3);
@@ -626,7 +602,5 @@ namespace Ayubo_Programming_Assignment
         private System.Windows.Forms.TextBox txtKmCost;
         private System.Windows.Forms.TextBox txtTotalCost;
         private System.Windows.Forms.Button btnTotalCost;
-        private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button btnBack;
     }
 }

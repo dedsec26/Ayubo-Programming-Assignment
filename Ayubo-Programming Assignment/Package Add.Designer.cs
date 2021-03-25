@@ -49,7 +49,6 @@ namespace Ayubo_Programming_Assignment
             this.label3 = new System.Windows.Forms.Label();
             this.btnPKInsert = new System.Windows.Forms.Button();
             this.btnPKClear = new System.Windows.Forms.Button();
-            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtVhN
@@ -216,22 +215,11 @@ namespace Ayubo_Programming_Assignment
             this.btnPKClear.UseVisualStyleBackColor = true;
             this.btnPKClear.Click += new System.EventHandler(this.btnPKClear_Click);
             // 
-            // btnBack
-            // 
-            this.btnBack.Location = new System.Drawing.Point(109, 321);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(102, 23);
-            this.btnBack.TabIndex = 48;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // frmPackageAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(335, 356);
-            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.txtVhN);
             this.Controls.Add(this.txtDrN);
             this.Controls.Add(this.txtXtrDur);
@@ -280,6 +268,5 @@ namespace Ayubo_Programming_Assignment
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnPKInsert;
         private System.Windows.Forms.Button btnPKClear;
-        private System.Windows.Forms.Button btnBack;
     }
 }

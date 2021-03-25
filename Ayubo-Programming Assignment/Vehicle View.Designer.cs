@@ -45,7 +45,6 @@ namespace Ayubo_Programming_Assignment
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboReg
@@ -181,22 +180,11 @@ namespace Ayubo_Programming_Assignment
             this.label1.TabIndex = 6;
             this.label1.Text = "Registration Number";
             // 
-            // btnBack
-            // 
-            this.btnBack.Location = new System.Drawing.Point(91, 247);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(102, 23);
-            this.btnBack.TabIndex = 24;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // frmVehicleView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(277, 296);
-            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.comboReg);
             this.Controls.Add(this.txtDriver);
             this.Controls.Add(this.txtMonth);
@@ -238,6 +226,5 @@ namespace Ayubo_Programming_Assignment
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnBack;
     }
 }
