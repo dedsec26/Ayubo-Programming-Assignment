@@ -53,11 +53,13 @@ namespace Ayubo_Programming_Assignment
             this.txtVhN = new System.Windows.Forms.TextBox();
             this.txtPKRt = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnPKDelete
             // 
-            this.btnPKDelete.Location = new System.Drawing.Point(24, 316);
+            this.btnPKDelete.Location = new System.Drawing.Point(23, 336);
             this.btnPKDelete.Name = "btnPKDelete";
             this.btnPKDelete.Size = new System.Drawing.Size(102, 23);
             this.btnPKDelete.TabIndex = 24;
@@ -68,7 +70,7 @@ namespace Ayubo_Programming_Assignment
             // comboPkID
             // 
             this.comboPkID.FormattingEnabled = true;
-            this.comboPkID.Location = new System.Drawing.Point(205, 26);
+            this.comboPkID.Location = new System.Drawing.Point(204, 46);
             this.comboPkID.Name = "comboPkID";
             this.comboPkID.Size = new System.Drawing.Size(102, 21);
             this.comboPkID.TabIndex = 23;
@@ -76,7 +78,7 @@ namespace Ayubo_Programming_Assignment
             // 
             // txtXtrDur
             // 
-            this.txtXtrDur.Location = new System.Drawing.Point(205, 209);
+            this.txtXtrDur.Location = new System.Drawing.Point(204, 229);
             this.txtXtrDur.Name = "txtXtrDur";
             this.txtXtrDur.Size = new System.Drawing.Size(102, 20);
             this.txtXtrDur.TabIndex = 22;
@@ -84,7 +86,7 @@ namespace Ayubo_Programming_Assignment
             // 
             // txtXtrDist
             // 
-            this.txtXtrDist.Location = new System.Drawing.Point(205, 183);
+            this.txtXtrDist.Location = new System.Drawing.Point(204, 203);
             this.txtXtrDist.Name = "txtXtrDist";
             this.txtXtrDist.Size = new System.Drawing.Size(102, 20);
             this.txtXtrDist.TabIndex = 21;
@@ -92,7 +94,7 @@ namespace Ayubo_Programming_Assignment
             // 
             // txtMxDist
             // 
-            this.txtMxDist.Location = new System.Drawing.Point(205, 131);
+            this.txtMxDist.Location = new System.Drawing.Point(204, 151);
             this.txtMxDist.Name = "txtMxDist";
             this.txtMxDist.Size = new System.Drawing.Size(102, 20);
             this.txtMxDist.TabIndex = 20;
@@ -100,7 +102,7 @@ namespace Ayubo_Programming_Assignment
             // 
             // txtPKName
             // 
-            this.txtPKName.Location = new System.Drawing.Point(205, 53);
+            this.txtPKName.Location = new System.Drawing.Point(204, 73);
             this.txtPKName.Name = "txtPKName";
             this.txtPKName.Size = new System.Drawing.Size(102, 20);
             this.txtPKName.TabIndex = 19;
@@ -108,7 +110,7 @@ namespace Ayubo_Programming_Assignment
             // 
             // txtMxDur
             // 
-            this.txtMxDur.Location = new System.Drawing.Point(205, 157);
+            this.txtMxDur.Location = new System.Drawing.Point(204, 177);
             this.txtMxDur.Name = "txtMxDur";
             this.txtMxDur.Size = new System.Drawing.Size(102, 20);
             this.txtMxDur.TabIndex = 18;
@@ -116,7 +118,7 @@ namespace Ayubo_Programming_Assignment
             // 
             // txtVHType
             // 
-            this.txtVHType.Location = new System.Drawing.Point(205, 105);
+            this.txtVHType.Location = new System.Drawing.Point(204, 125);
             this.txtVHType.Name = "txtVHType";
             this.txtVHType.Size = new System.Drawing.Size(102, 20);
             this.txtVHType.TabIndex = 17;
@@ -124,7 +126,7 @@ namespace Ayubo_Programming_Assignment
             // 
             // btnPKClear
             // 
-            this.btnPKClear.Location = new System.Drawing.Point(24, 359);
+            this.btnPKClear.Location = new System.Drawing.Point(23, 379);
             this.btnPKClear.Name = "btnPKClear";
             this.btnPKClear.Size = new System.Drawing.Size(102, 23);
             this.btnPKClear.TabIndex = 16;
@@ -134,7 +136,7 @@ namespace Ayubo_Programming_Assignment
             // 
             // btnPKUpdate
             // 
-            this.btnPKUpdate.Location = new System.Drawing.Point(205, 316);
+            this.btnPKUpdate.Location = new System.Drawing.Point(204, 336);
             this.btnPKUpdate.Name = "btnPKUpdate";
             this.btnPKUpdate.Size = new System.Drawing.Size(102, 23);
             this.btnPKUpdate.TabIndex = 15;
@@ -144,7 +146,7 @@ namespace Ayubo_Programming_Assignment
             // 
             // btnPKRetrieve
             // 
-            this.btnPKRetrieve.Location = new System.Drawing.Point(205, 359);
+            this.btnPKRetrieve.Location = new System.Drawing.Point(204, 379);
             this.btnPKRetrieve.Name = "btnPKRetrieve";
             this.btnPKRetrieve.Size = new System.Drawing.Size(102, 23);
             this.btnPKRetrieve.TabIndex = 14;
@@ -155,7 +157,7 @@ namespace Ayubo_Programming_Assignment
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(21, 216);
+            this.label7.Location = new System.Drawing.Point(20, 236);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(166, 13);
             this.label7.TabIndex = 12;
@@ -165,7 +167,7 @@ namespace Ayubo_Programming_Assignment
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(21, 190);
+            this.label6.Location = new System.Drawing.Point(20, 210);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(161, 13);
             this.label6.TabIndex = 11;
@@ -175,7 +177,7 @@ namespace Ayubo_Programming_Assignment
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 138);
+            this.label4.Location = new System.Drawing.Point(20, 158);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(121, 13);
             this.label4.TabIndex = 10;
@@ -185,7 +187,7 @@ namespace Ayubo_Programming_Assignment
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 164);
+            this.label5.Location = new System.Drawing.Point(20, 184);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(131, 13);
             this.label5.TabIndex = 7;
@@ -195,7 +197,7 @@ namespace Ayubo_Programming_Assignment
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 60);
+            this.label2.Location = new System.Drawing.Point(20, 80);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 9;
@@ -205,7 +207,7 @@ namespace Ayubo_Programming_Assignment
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 112);
+            this.label3.Location = new System.Drawing.Point(20, 132);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 13);
             this.label3.TabIndex = 8;
@@ -215,7 +217,7 @@ namespace Ayubo_Programming_Assignment
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 34);
+            this.label1.Location = new System.Drawing.Point(20, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 13);
             this.label1.TabIndex = 6;
@@ -225,7 +227,7 @@ namespace Ayubo_Programming_Assignment
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(21, 242);
+            this.label8.Location = new System.Drawing.Point(20, 262);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(108, 13);
             this.label8.TabIndex = 11;
@@ -235,7 +237,7 @@ namespace Ayubo_Programming_Assignment
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(21, 268);
+            this.label9.Location = new System.Drawing.Point(20, 288);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(116, 13);
             this.label9.TabIndex = 12;
@@ -244,7 +246,7 @@ namespace Ayubo_Programming_Assignment
             // 
             // txtDrN
             // 
-            this.txtDrN.Location = new System.Drawing.Point(205, 235);
+            this.txtDrN.Location = new System.Drawing.Point(204, 255);
             this.txtDrN.Name = "txtDrN";
             this.txtDrN.Size = new System.Drawing.Size(102, 20);
             this.txtDrN.TabIndex = 21;
@@ -252,7 +254,7 @@ namespace Ayubo_Programming_Assignment
             // 
             // txtVhN
             // 
-            this.txtVhN.Location = new System.Drawing.Point(205, 261);
+            this.txtVhN.Location = new System.Drawing.Point(204, 281);
             this.txtVhN.Name = "txtVhN";
             this.txtVhN.Size = new System.Drawing.Size(102, 20);
             this.txtVhN.TabIndex = 22;
@@ -260,7 +262,7 @@ namespace Ayubo_Programming_Assignment
             // 
             // txtPKRt
             // 
-            this.txtPKRt.Location = new System.Drawing.Point(205, 79);
+            this.txtPKRt.Location = new System.Drawing.Point(204, 99);
             this.txtPKRt.Name = "txtPKRt";
             this.txtPKRt.Size = new System.Drawing.Size(102, 20);
             this.txtPKRt.TabIndex = 19;
@@ -269,18 +271,44 @@ namespace Ayubo_Programming_Assignment
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(21, 86);
+            this.label10.Location = new System.Drawing.Point(20, 106);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(30, 13);
             this.label10.TabIndex = 9;
             this.label10.Text = "Rate";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Roboto Medium", 13F, System.Drawing.FontStyle.Bold);
+            this.label11.Location = new System.Drawing.Point(97, 9);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(142, 22);
+            this.label11.TabIndex = 52;
+            this.label11.Text = "EDIT PACKAGE";
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Red;
+            this.btnExit.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btnExit.Location = new System.Drawing.Point(294, 1);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(34, 24);
+            this.btnExit.TabIndex = 51;
+            this.btnExit.Text = "X";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // frmPackageEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(329, 437);
+            this.ClientSize = new System.Drawing.Size(329, 418);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnPKDelete);
             this.Controls.Add(this.comboPkID);
             this.Controls.Add(this.txtVhN);
@@ -305,7 +333,9 @@ namespace Ayubo_Programming_Assignment
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmPackageEdit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit Package";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
@@ -339,5 +369,7 @@ namespace Ayubo_Programming_Assignment
         private System.Windows.Forms.TextBox txtVhN;
         private System.Windows.Forms.TextBox txtPKRt;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btnExit;
     }
 }

@@ -76,6 +76,8 @@ namespace Ayubo_Programming_Assignment
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -101,7 +103,7 @@ namespace Ayubo_Programming_Assignment
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(11, 29);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(302, 293);
             this.groupBox1.TabIndex = 0;
@@ -258,7 +260,7 @@ namespace Ayubo_Programming_Assignment
             this.groupBox2.Controls.Add(this.dtimeStart);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Location = new System.Drawing.Point(330, 12);
+            this.groupBox2.Location = new System.Drawing.Point(329, 29);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(301, 170);
             this.groupBox2.TabIndex = 4;
@@ -372,7 +374,7 @@ namespace Ayubo_Programming_Assignment
             this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Location = new System.Drawing.Point(330, 195);
+            this.groupBox3.Location = new System.Drawing.Point(329, 212);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(301, 163);
             this.groupBox3.TabIndex = 5;
@@ -497,7 +499,7 @@ namespace Ayubo_Programming_Assignment
             this.groupBox4.Controls.Add(this.txtTotalCost);
             this.groupBox4.Controls.Add(this.label8);
             this.groupBox4.Controls.Add(this.txtCostXt);
-            this.groupBox4.Location = new System.Drawing.Point(8, 311);
+            this.groupBox4.Location = new System.Drawing.Point(7, 328);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(306, 153);
             this.groupBox4.TabIndex = 8;
@@ -515,7 +517,7 @@ namespace Ayubo_Programming_Assignment
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(335, 441);
+            this.btnClear.Location = new System.Drawing.Point(334, 458);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(283, 23);
             this.btnClear.TabIndex = 9;
@@ -523,17 +525,46 @@ namespace Ayubo_Programming_Assignment
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Red;
+            this.btnExit.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btnExit.Location = new System.Drawing.Point(610, -1);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(34, 24);
+            this.btnExit.TabIndex = 49;
+            this.btnExit.Text = "X";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Roboto Medium", 13F, System.Drawing.FontStyle.Bold);
+            this.label9.Location = new System.Drawing.Point(277, 1);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(101, 22);
+            this.label9.TabIndex = 50;
+            this.label9.Text = "DAY TOUR";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
             // frmDayTour
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 479);
+            this.ClientSize = new System.Drawing.Size(642, 492);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmDayTour";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Day Tour";
             this.Load += new System.EventHandler(this.Form4_Load);
             this.groupBox1.ResumeLayout(false);
@@ -545,6 +576,7 @@ namespace Ayubo_Programming_Assignment
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -597,5 +629,7 @@ namespace Ayubo_Programming_Assignment
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label label9;
     }
 }

@@ -29,11 +29,6 @@ namespace Ayubo_Programming_Assignment
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnRent = new System.Windows.Forms.Button();
-            this.btnVehicle = new System.Windows.Forms.Button();
-            this.btnPackage = new System.Windows.Forms.Button();
-            this.btnTour = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.vehicleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,58 +43,11 @@ namespace Ayubo_Programming_Assignment
             this.dayTourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.longTourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnRent
-            // 
-            this.btnRent.Location = new System.Drawing.Point(514, 343);
-            this.btnRent.Name = "btnRent";
-            this.btnRent.Size = new System.Drawing.Size(90, 38);
-            this.btnRent.TabIndex = 0;
-            this.btnRent.Text = "Rent";
-            this.btnRent.UseVisualStyleBackColor = true;
-            this.btnRent.Click += new System.EventHandler(this.btnRent_Click);
-            // 
-            // btnVehicle
-            // 
-            this.btnVehicle.Location = new System.Drawing.Point(294, 343);
-            this.btnVehicle.Name = "btnVehicle";
-            this.btnVehicle.Size = new System.Drawing.Size(90, 38);
-            this.btnVehicle.TabIndex = 0;
-            this.btnVehicle.Text = "Vehicle";
-            this.btnVehicle.UseVisualStyleBackColor = true;
-            this.btnVehicle.Click += new System.EventHandler(this.btnVehicle_Click);
-            // 
-            // btnPackage
-            // 
-            this.btnPackage.Location = new System.Drawing.Point(404, 343);
-            this.btnPackage.Name = "btnPackage";
-            this.btnPackage.Size = new System.Drawing.Size(90, 38);
-            this.btnPackage.TabIndex = 0;
-            this.btnPackage.Text = "Package";
-            this.btnPackage.UseVisualStyleBackColor = true;
-            this.btnPackage.Click += new System.EventHandler(this.btnPackage_Click);
-            // 
-            // btnTour
-            // 
-            this.btnTour.Location = new System.Drawing.Point(624, 343);
-            this.btnTour.Name = "btnTour";
-            this.btnTour.Size = new System.Drawing.Size(90, 38);
-            this.btnTour.TabIndex = 0;
-            this.btnTour.Text = "Tour";
-            this.btnTour.UseVisualStyleBackColor = true;
-            this.btnTour.Click += new System.EventHandler(this.btnTour_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(734, 343);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(90, 38);
-            this.btnExit.TabIndex = 6;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // menuStrip1
             // 
@@ -214,21 +162,59 @@ namespace Ayubo_Programming_Assignment
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.BackColor = System.Drawing.Color.Gray;
+            this.lblTime.Enabled = false;
+            this.lblTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblTime.ForeColor = System.Drawing.Color.Black;
+            this.lblTime.Location = new System.Drawing.Point(768, 573);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(30, 13);
+            this.lblTime.TabIndex = 10;
+            this.lblTime.Text = "Time";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Roboto Medium", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(277, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(381, 77);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Ayubo Drive";
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Red;
+            this.btnExit.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btnExit.Location = new System.Drawing.Point(889, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(34, 24);
+            this.btnExit.TabIndex = 13;
+            this.btnExit.Text = "X";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
+            // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(923, 592);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnTour);
-            this.Controls.Add(this.btnPackage);
-            this.Controls.Add(this.btnVehicle);
-            this.Controls.Add(this.btnRent);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTime);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmHome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
+            this.Load += new System.EventHandler(this.frmHome_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -237,12 +223,6 @@ namespace Ayubo_Programming_Assignment
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnRent;
-        private System.Windows.Forms.Button btnVehicle;
-        private System.Windows.Forms.Button btnPackage;
-        private System.Windows.Forms.Button btnTour;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem vehicleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
@@ -257,5 +237,8 @@ namespace Ayubo_Programming_Assignment
         private System.Windows.Forms.ToolStripMenuItem dayTourToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem longTourToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.Label lblTime;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnExit;
     }
 }

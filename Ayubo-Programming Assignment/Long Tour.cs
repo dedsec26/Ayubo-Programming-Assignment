@@ -307,5 +307,15 @@ namespace Ayubo_Programming_Assignment
         {
             Application.Exit();
         }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            Dispose();
+        }
     }
 }

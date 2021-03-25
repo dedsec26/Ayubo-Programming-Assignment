@@ -162,5 +162,10 @@ namespace Ayubo_Programming_Assignment
         {
             Application.Exit();
         }
+
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            Dispose();
+        }
     }
 }

@@ -279,5 +279,15 @@ namespace Ayubo_Programming_Assignment
         {
             clear();
         }
+
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            Dispose();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -62,6 +62,8 @@ namespace Ayubo_Programming_Assignment
             this.chkDrvr = new System.Windows.Forms.CheckBox();
             this.btnTotal = new System.Windows.Forms.Button();
             this.txtTotal = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -130,7 +132,7 @@ namespace Ayubo_Programming_Assignment
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(13, 36);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(338, 216);
             this.groupBox1.TabIndex = 3;
@@ -215,7 +217,7 @@ namespace Ayubo_Programming_Assignment
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Location = new System.Drawing.Point(356, 12);
+            this.groupBox2.Location = new System.Drawing.Point(357, 36);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(252, 248);
             this.groupBox2.TabIndex = 4;
@@ -349,7 +351,7 @@ namespace Ayubo_Programming_Assignment
             // chkDrvr
             // 
             this.chkDrvr.AutoSize = true;
-            this.chkDrvr.Location = new System.Drawing.Point(21, 241);
+            this.chkDrvr.Location = new System.Drawing.Point(22, 265);
             this.chkDrvr.Name = "chkDrvr";
             this.chkDrvr.Size = new System.Drawing.Size(77, 17);
             this.chkDrvr.TabIndex = 24;
@@ -359,7 +361,7 @@ namespace Ayubo_Programming_Assignment
             // 
             // btnTotal
             // 
-            this.btnTotal.Location = new System.Drawing.Point(104, 237);
+            this.btnTotal.Location = new System.Drawing.Point(105, 261);
             this.btnTotal.Name = "btnTotal";
             this.btnTotal.Size = new System.Drawing.Size(115, 23);
             this.btnTotal.TabIndex = 5;
@@ -369,23 +371,51 @@ namespace Ayubo_Programming_Assignment
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(233, 239);
+            this.txtTotal.Location = new System.Drawing.Point(234, 263);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(117, 20);
             this.txtTotal.TabIndex = 6;
             this.txtTotal.TextChanged += new System.EventHandler(this.txtTotal_TextChanged);
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Roboto Medium", 13F, System.Drawing.FontStyle.Bold);
+            this.label14.Location = new System.Drawing.Point(275, 9);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(59, 22);
+            this.label14.TabIndex = 54;
+            this.label14.Text = "RENT";
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Red;
+            this.btnExit.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btnExit.Location = new System.Drawing.Point(589, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(34, 24);
+            this.btnExit.TabIndex = 53;
+            this.btnExit.Text = "X";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
+            // 
             // frmRent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 279);
+            this.ClientSize = new System.Drawing.Size(623, 299);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.chkDrvr);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.btnTotal);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmRent";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rent";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.groupBox1.ResumeLayout(false);
@@ -432,5 +462,7 @@ namespace Ayubo_Programming_Assignment
         private System.Windows.Forms.CheckBox chkDrvr;
         private System.Windows.Forms.Button btnTotal;
         private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button btnExit;
     }
 }

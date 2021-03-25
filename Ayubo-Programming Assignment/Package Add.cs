@@ -80,5 +80,10 @@ namespace Ayubo_Programming_Assignment
             frmPackage.Show();
             Dispose();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
     }
 }

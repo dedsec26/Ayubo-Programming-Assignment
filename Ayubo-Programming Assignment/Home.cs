@@ -123,12 +123,27 @@ namespace Ayubo_Programming_Assignment
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Application Will be Closed!", "caption" , MessageBoxButtons.OKCancel);
+            DialogResult result = MessageBox.Show("Application Will be Closed!", "Warning!" , MessageBoxButtons.OKCancel);
             if (result == DialogResult.OK)
             {
                 Application.Exit();
             }
             
+        }
+
+        private void frmHome_Load(object sender, EventArgs e)
+        {
+            lblTime.Text = DateTime.Now.ToString("dddd dd - MM - yyyy hh:mm");
+            //txtTime.Text = DateTime.Now.ToString("dddd dd - MM - yyyy hh:mm");
+        }
+
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Application Will be Closed!", "Warning!", MessageBoxButtons.OKCancel);
+            if (result == DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
     }
 }

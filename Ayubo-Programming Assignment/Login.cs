@@ -74,5 +74,24 @@ namespace Ayubo_Programming_Assignment
                 //sqlConnection1.Close();
             }
         }
+
+        private void txtExit_Click(object sender, EventArgs e)
+        {
+
+            DialogResult result = MessageBox.Show("Application Will be Closed!", "Warning!", MessageBoxButtons.OKCancel);
+            if (result == DialogResult.OK)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Application Will be Closed!", "Warning!", MessageBoxButtons.OKCancel);
+            if (result == DialogResult.OK)
+            {
+                Application.Exit();
+            }
+        }
     }
 }
