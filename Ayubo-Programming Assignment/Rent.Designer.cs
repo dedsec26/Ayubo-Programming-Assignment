@@ -74,7 +74,7 @@ namespace Ayubo_Programming_Assignment
             this.label1.Location = new System.Drawing.Point(7, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 8;
             this.label1.Text = "Start Date";
             // 
             // label2
@@ -100,7 +100,7 @@ namespace Ayubo_Programming_Assignment
             this.dtimeStart.Location = new System.Drawing.Point(121, 16);
             this.dtimeStart.Name = "dtimeStart";
             this.dtimeStart.Size = new System.Drawing.Size(200, 20);
-            this.dtimeStart.TabIndex = 1;
+            this.dtimeStart.TabIndex = 0;
             // 
             // dtimeEnd
             // 
@@ -135,7 +135,7 @@ namespace Ayubo_Programming_Assignment
             this.groupBox1.Location = new System.Drawing.Point(13, 36);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(338, 216);
-            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Days";
             // 
@@ -144,7 +144,7 @@ namespace Ayubo_Programming_Assignment
             this.btnCalculate.Location = new System.Drawing.Point(10, 185);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(311, 23);
-            this.btnCalculate.TabIndex = 3;
+            this.btnCalculate.TabIndex = 7;
             this.btnCalculate.Text = "Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
@@ -154,7 +154,7 @@ namespace Ayubo_Programming_Assignment
             this.txtNMonths.Location = new System.Drawing.Point(121, 123);
             this.txtNMonths.Name = "txtNMonths";
             this.txtNMonths.Size = new System.Drawing.Size(200, 20);
-            this.txtNMonths.TabIndex = 2;
+            this.txtNMonths.TabIndex = 4;
             this.txtNMonths.TextChanged += new System.EventHandler(this.txtNDays_TextChanged);
             // 
             // txtTdays
@@ -162,7 +162,7 @@ namespace Ayubo_Programming_Assignment
             this.txtTdays.Location = new System.Drawing.Point(121, 149);
             this.txtTdays.Name = "txtTdays";
             this.txtTdays.Size = new System.Drawing.Size(200, 20);
-            this.txtTdays.TabIndex = 2;
+            this.txtTdays.TabIndex = 5;
             this.txtTdays.TextChanged += new System.EventHandler(this.txtNDays_TextChanged);
             // 
             // txtNWeeks
@@ -170,7 +170,7 @@ namespace Ayubo_Programming_Assignment
             this.txtNWeeks.Location = new System.Drawing.Point(121, 97);
             this.txtNWeeks.Name = "txtNWeeks";
             this.txtNWeeks.Size = new System.Drawing.Size(200, 20);
-            this.txtNWeeks.TabIndex = 2;
+            this.txtNWeeks.TabIndex = 3;
             this.txtNWeeks.TextChanged += new System.EventHandler(this.txtNDays_TextChanged);
             // 
             // label5
@@ -220,7 +220,7 @@ namespace Ayubo_Programming_Assignment
             this.groupBox2.Location = new System.Drawing.Point(357, 36);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(252, 248);
-            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Vehicle";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
@@ -231,56 +231,56 @@ namespace Ayubo_Programming_Assignment
             this.comboReg.Location = new System.Drawing.Point(135, 16);
             this.comboReg.Name = "comboReg";
             this.comboReg.Size = new System.Drawing.Size(102, 21);
-            this.comboReg.TabIndex = 23;
+            this.comboReg.TabIndex = 0;
             // 
             // txtDriver
             // 
             this.txtDriver.Location = new System.Drawing.Point(135, 173);
             this.txtDriver.Name = "txtDriver";
             this.txtDriver.Size = new System.Drawing.Size(102, 20);
-            this.txtDriver.TabIndex = 22;
+            this.txtDriver.TabIndex = 6;
             // 
             // txtMonth
             // 
             this.txtMonth.Location = new System.Drawing.Point(135, 147);
             this.txtMonth.Name = "txtMonth";
             this.txtMonth.Size = new System.Drawing.Size(102, 20);
-            this.txtMonth.TabIndex = 21;
+            this.txtMonth.TabIndex = 5;
             // 
             // txtDay
             // 
             this.txtDay.Location = new System.Drawing.Point(135, 95);
             this.txtDay.Name = "txtDay";
             this.txtDay.Size = new System.Drawing.Size(102, 20);
-            this.txtDay.TabIndex = 20;
+            this.txtDay.TabIndex = 3;
             // 
             // txtModel
             // 
             this.txtModel.Location = new System.Drawing.Point(135, 43);
             this.txtModel.Name = "txtModel";
             this.txtModel.Size = new System.Drawing.Size(102, 20);
-            this.txtModel.TabIndex = 19;
+            this.txtModel.TabIndex = 1;
             // 
             // txtWeek
             // 
             this.txtWeek.Location = new System.Drawing.Point(135, 121);
             this.txtWeek.Name = "txtWeek";
             this.txtWeek.Size = new System.Drawing.Size(102, 20);
-            this.txtWeek.TabIndex = 18;
+            this.txtWeek.TabIndex = 4;
             // 
             // txtType
             // 
             this.txtType.Location = new System.Drawing.Point(135, 69);
             this.txtType.Name = "txtType";
             this.txtType.Size = new System.Drawing.Size(102, 20);
-            this.txtType.TabIndex = 17;
+            this.txtType.TabIndex = 2;
             // 
             // btnRetrieve
             // 
             this.btnRetrieve.Location = new System.Drawing.Point(9, 210);
             this.btnRetrieve.Name = "btnRetrieve";
             this.btnRetrieve.Size = new System.Drawing.Size(228, 23);
-            this.btnRetrieve.TabIndex = 14;
+            this.btnRetrieve.TabIndex = 7;
             this.btnRetrieve.Text = "Retrieve";
             this.btnRetrieve.UseVisualStyleBackColor = true;
             this.btnRetrieve.Click += new System.EventHandler(this.btnRetrieve_Click);
@@ -354,7 +354,7 @@ namespace Ayubo_Programming_Assignment
             this.chkDrvr.Location = new System.Drawing.Point(22, 265);
             this.chkDrvr.Name = "chkDrvr";
             this.chkDrvr.Size = new System.Drawing.Size(77, 17);
-            this.chkDrvr.TabIndex = 24;
+            this.chkDrvr.TabIndex = 2;
             this.chkDrvr.Text = "With driver";
             this.chkDrvr.UseVisualStyleBackColor = true;
             this.chkDrvr.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
@@ -364,7 +364,7 @@ namespace Ayubo_Programming_Assignment
             this.btnTotal.Location = new System.Drawing.Point(105, 261);
             this.btnTotal.Name = "btnTotal";
             this.btnTotal.Size = new System.Drawing.Size(115, 23);
-            this.btnTotal.TabIndex = 5;
+            this.btnTotal.TabIndex = 3;
             this.btnTotal.Text = "Calculate Total Cost";
             this.btnTotal.UseVisualStyleBackColor = true;
             this.btnTotal.Click += new System.EventHandler(this.btnTotal_Click);
@@ -374,7 +374,7 @@ namespace Ayubo_Programming_Assignment
             this.txtTotal.Location = new System.Drawing.Point(234, 263);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(117, 20);
-            this.txtTotal.TabIndex = 6;
+            this.txtTotal.TabIndex = 4;
             this.txtTotal.TextChanged += new System.EventHandler(this.txtTotal_TextChanged);
             // 
             // label14

@@ -61,7 +61,7 @@ namespace Ayubo_Programming_Assignment
             this.comboPkID.Location = new System.Drawing.Point(201, 47);
             this.comboPkID.Name = "comboPkID";
             this.comboPkID.Size = new System.Drawing.Size(102, 21);
-            this.comboPkID.TabIndex = 48;
+            this.comboPkID.TabIndex = 0;
             // 
             // txtVhN
             // 
@@ -131,7 +131,7 @@ namespace Ayubo_Programming_Assignment
             this.btnPKClear.Location = new System.Drawing.Point(201, 340);
             this.btnPKClear.Name = "btnPKClear";
             this.btnPKClear.Size = new System.Drawing.Size(102, 23);
-            this.btnPKClear.TabIndex = 38;
+            this.btnPKClear.TabIndex = 2;
             this.btnPKClear.Text = "Clear";
             this.btnPKClear.UseVisualStyleBackColor = true;
             this.btnPKClear.Click += new System.EventHandler(this.btnPKClear_Click);
@@ -141,7 +141,7 @@ namespace Ayubo_Programming_Assignment
             this.btnPKRetrieve.Location = new System.Drawing.Point(20, 340);
             this.btnPKRetrieve.Name = "btnPKRetrieve";
             this.btnPKRetrieve.Size = new System.Drawing.Size(102, 23);
-            this.btnPKRetrieve.TabIndex = 36;
+            this.btnPKRetrieve.TabIndex = 1;
             this.btnPKRetrieve.Text = "View";
             this.btnPKRetrieve.UseVisualStyleBackColor = true;
             this.btnPKRetrieve.Click += new System.EventHandler(this.btnPKRetrieve_Click);

@@ -172,7 +172,7 @@ namespace Ayubo_Programming_Assignment
             this.btnPKRetrieve.Location = new System.Drawing.Point(11, 228);
             this.btnPKRetrieve.Name = "btnPKRetrieve";
             this.btnPKRetrieve.Size = new System.Drawing.Size(283, 23);
-            this.btnPKRetrieve.TabIndex = 36;
+            this.btnPKRetrieve.TabIndex = 0;
             this.btnPKRetrieve.Text = "Retrieve";
             this.btnPKRetrieve.UseVisualStyleBackColor = true;
             this.btnPKRetrieve.Click += new System.EventHandler(this.btnPKRetrieve_Click);
@@ -262,7 +262,7 @@ namespace Ayubo_Programming_Assignment
             this.groupBox3.Location = new System.Drawing.Point(320, 29);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(362, 144);
-            this.groupBox3.TabIndex = 6;
+            this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Duration";
             // 
@@ -271,7 +271,7 @@ namespace Ayubo_Programming_Assignment
             this.btnCalculate.Location = new System.Drawing.Point(10, 107);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(342, 23);
-            this.btnCalculate.TabIndex = 3;
+            this.btnCalculate.TabIndex = 0;
             this.btnCalculate.Text = "Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
@@ -339,7 +339,7 @@ namespace Ayubo_Programming_Assignment
             this.groupBox4.Location = new System.Drawing.Point(320, 179);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(362, 163);
-            this.groupBox4.TabIndex = 7;
+            this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Distance";
             // 
@@ -348,7 +348,7 @@ namespace Ayubo_Programming_Assignment
             this.btnKMCal.Location = new System.Drawing.Point(5, 128);
             this.btnKMCal.Name = "btnKMCal";
             this.btnKMCal.Size = new System.Drawing.Size(347, 23);
-            this.btnKMCal.TabIndex = 3;
+            this.btnKMCal.TabIndex = 0;
             this.btnKMCal.Text = "Calculate";
             this.btnKMCal.UseVisualStyleBackColor = true;
             this.btnKMCal.Click += new System.EventHandler(this.btnKMCal_Click);
@@ -439,7 +439,7 @@ namespace Ayubo_Programming_Assignment
             this.groupBox2.Location = new System.Drawing.Point(12, 298);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(302, 178);
-            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Total Cost";
             // 
@@ -448,7 +448,7 @@ namespace Ayubo_Programming_Assignment
             this.btnTotal.Location = new System.Drawing.Point(12, 144);
             this.btnTotal.Name = "btnTotal";
             this.btnTotal.Size = new System.Drawing.Size(282, 23);
-            this.btnTotal.TabIndex = 4;
+            this.btnTotal.TabIndex = 0;
             this.btnTotal.Text = "Calculate Total Cost";
             this.btnTotal.UseVisualStyleBackColor = true;
             this.btnTotal.Click += new System.EventHandler(this.btnTotal_Click);
@@ -516,7 +516,7 @@ namespace Ayubo_Programming_Assignment
             this.btnClear.Location = new System.Drawing.Point(325, 442);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(347, 23);
-            this.btnClear.TabIndex = 9;
+            this.btnClear.TabIndex = 5;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -561,7 +561,7 @@ namespace Ayubo_Programming_Assignment
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLongTour";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Long Tour";
+            this.Text = "q";
             this.Load += new System.EventHandler(this.Form5_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

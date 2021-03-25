@@ -90,6 +90,7 @@ namespace Ayubo_Programming_Assignment
             txtNWeeks.Enabled = false;
             txtNMonths.Enabled = false;
             txtNDays.Enabled = false;
+            txtTotal.Enabled = false;
 
         }
 

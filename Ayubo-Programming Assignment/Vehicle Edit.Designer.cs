@@ -56,7 +56,7 @@ namespace Ayubo_Programming_Assignment
             this.btnDelete.Location = new System.Drawing.Point(12, 251);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnDelete.TabIndex = 24;
+            this.btnDelete.TabIndex = 9;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -67,56 +67,56 @@ namespace Ayubo_Programming_Assignment
             this.comboReg.Location = new System.Drawing.Point(137, 47);
             this.comboReg.Name = "comboReg";
             this.comboReg.Size = new System.Drawing.Size(102, 21);
-            this.comboReg.TabIndex = 23;
+            this.comboReg.TabIndex = 0;
             // 
             // txtDriver
             // 
             this.txtDriver.Location = new System.Drawing.Point(137, 204);
             this.txtDriver.Name = "txtDriver";
             this.txtDriver.Size = new System.Drawing.Size(102, 20);
-            this.txtDriver.TabIndex = 22;
+            this.txtDriver.TabIndex = 6;
             // 
             // txtMonth
             // 
             this.txtMonth.Location = new System.Drawing.Point(137, 178);
             this.txtMonth.Name = "txtMonth";
             this.txtMonth.Size = new System.Drawing.Size(102, 20);
-            this.txtMonth.TabIndex = 21;
+            this.txtMonth.TabIndex = 5;
             // 
             // txtDay
             // 
             this.txtDay.Location = new System.Drawing.Point(137, 126);
             this.txtDay.Name = "txtDay";
             this.txtDay.Size = new System.Drawing.Size(102, 20);
-            this.txtDay.TabIndex = 20;
+            this.txtDay.TabIndex = 3;
             // 
             // txtModel
             // 
             this.txtModel.Location = new System.Drawing.Point(137, 74);
             this.txtModel.Name = "txtModel";
             this.txtModel.Size = new System.Drawing.Size(102, 20);
-            this.txtModel.TabIndex = 19;
+            this.txtModel.TabIndex = 1;
             // 
             // txtWeek
             // 
             this.txtWeek.Location = new System.Drawing.Point(137, 152);
             this.txtWeek.Name = "txtWeek";
             this.txtWeek.Size = new System.Drawing.Size(102, 20);
-            this.txtWeek.TabIndex = 18;
+            this.txtWeek.TabIndex = 4;
             // 
             // txtType
             // 
             this.txtType.Location = new System.Drawing.Point(137, 100);
             this.txtType.Name = "txtType";
             this.txtType.Size = new System.Drawing.Size(102, 20);
-            this.txtType.TabIndex = 17;
+            this.txtType.TabIndex = 2;
             // 
             // btnClear
             // 
             this.btnClear.Location = new System.Drawing.Point(12, 294);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
-            this.btnClear.TabIndex = 16;
+            this.btnClear.TabIndex = 10;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -126,7 +126,7 @@ namespace Ayubo_Programming_Assignment
             this.btnUpdate.Location = new System.Drawing.Point(164, 251);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
-            this.btnUpdate.TabIndex = 15;
+            this.btnUpdate.TabIndex = 8;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -136,7 +136,7 @@ namespace Ayubo_Programming_Assignment
             this.btnRetrieve.Location = new System.Drawing.Point(164, 294);
             this.btnRetrieve.Name = "btnRetrieve";
             this.btnRetrieve.Size = new System.Drawing.Size(75, 23);
-            this.btnRetrieve.TabIndex = 14;
+            this.btnRetrieve.TabIndex = 7;
             this.btnRetrieve.Text = "Retrieve";
             this.btnRetrieve.UseVisualStyleBackColor = true;
             this.btnRetrieve.Click += new System.EventHandler(this.btnRetrieve_Click);

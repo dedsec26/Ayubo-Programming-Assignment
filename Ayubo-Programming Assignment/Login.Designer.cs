@@ -64,7 +64,7 @@ namespace Ayubo_Programming_Assignment
             this.txtUsername.Location = new System.Drawing.Point(160, 72);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(100, 20);
-            this.txtUsername.TabIndex = 1;
+            this.txtUsername.TabIndex = 0;
             // 
             // txtPass
             // 
@@ -113,7 +113,7 @@ namespace Ayubo_Programming_Assignment
             this.btnExit.Name = "btnExit";
             this.btnExit.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnExit.Size = new System.Drawing.Size(34, 24);
-            this.btnExit.TabIndex = 14;
+            this.btnExit.TabIndex = 4;
             this.btnExit.Text = "X";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnExit.UseVisualStyleBackColor = false;

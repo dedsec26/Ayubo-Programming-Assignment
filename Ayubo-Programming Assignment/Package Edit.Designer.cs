@@ -62,7 +62,7 @@ namespace Ayubo_Programming_Assignment
             this.btnPKDelete.Location = new System.Drawing.Point(23, 336);
             this.btnPKDelete.Name = "btnPKDelete";
             this.btnPKDelete.Size = new System.Drawing.Size(102, 23);
-            this.btnPKDelete.TabIndex = 24;
+            this.btnPKDelete.TabIndex = 12;
             this.btnPKDelete.Text = "Delete";
             this.btnPKDelete.UseVisualStyleBackColor = true;
             this.btnPKDelete.Click += new System.EventHandler(this.btnPKDelete_Click);
@@ -73,7 +73,7 @@ namespace Ayubo_Programming_Assignment
             this.comboPkID.Location = new System.Drawing.Point(204, 46);
             this.comboPkID.Name = "comboPkID";
             this.comboPkID.Size = new System.Drawing.Size(102, 21);
-            this.comboPkID.TabIndex = 23;
+            this.comboPkID.TabIndex = 0;
             this.comboPkID.SelectedIndexChanged += new System.EventHandler(this.comboPkID_SelectedIndexChanged);
             // 
             // txtXtrDur
@@ -81,7 +81,7 @@ namespace Ayubo_Programming_Assignment
             this.txtXtrDur.Location = new System.Drawing.Point(204, 229);
             this.txtXtrDur.Name = "txtXtrDur";
             this.txtXtrDur.Size = new System.Drawing.Size(102, 20);
-            this.txtXtrDur.TabIndex = 22;
+            this.txtXtrDur.TabIndex = 8;
             this.txtXtrDur.TextChanged += new System.EventHandler(this.txtXtrDur_TextChanged);
             // 
             // txtXtrDist
@@ -89,7 +89,7 @@ namespace Ayubo_Programming_Assignment
             this.txtXtrDist.Location = new System.Drawing.Point(204, 203);
             this.txtXtrDist.Name = "txtXtrDist";
             this.txtXtrDist.Size = new System.Drawing.Size(102, 20);
-            this.txtXtrDist.TabIndex = 21;
+            this.txtXtrDist.TabIndex = 7;
             this.txtXtrDist.TextChanged += new System.EventHandler(this.txtXtrDist_TextChanged);
             // 
             // txtMxDist
@@ -97,7 +97,7 @@ namespace Ayubo_Programming_Assignment
             this.txtMxDist.Location = new System.Drawing.Point(204, 151);
             this.txtMxDist.Name = "txtMxDist";
             this.txtMxDist.Size = new System.Drawing.Size(102, 20);
-            this.txtMxDist.TabIndex = 20;
+            this.txtMxDist.TabIndex = 5;
             this.txtMxDist.TextChanged += new System.EventHandler(this.txtMxDist_TextChanged);
             // 
             // txtPKName
@@ -105,7 +105,7 @@ namespace Ayubo_Programming_Assignment
             this.txtPKName.Location = new System.Drawing.Point(204, 73);
             this.txtPKName.Name = "txtPKName";
             this.txtPKName.Size = new System.Drawing.Size(102, 20);
-            this.txtPKName.TabIndex = 19;
+            this.txtPKName.TabIndex = 2;
             this.txtPKName.TextChanged += new System.EventHandler(this.txtPKName_TextChanged);
             // 
             // txtMxDur
@@ -113,7 +113,7 @@ namespace Ayubo_Programming_Assignment
             this.txtMxDur.Location = new System.Drawing.Point(204, 177);
             this.txtMxDur.Name = "txtMxDur";
             this.txtMxDur.Size = new System.Drawing.Size(102, 20);
-            this.txtMxDur.TabIndex = 18;
+            this.txtMxDur.TabIndex = 6;
             this.txtMxDur.TextChanged += new System.EventHandler(this.txtMxDur_TextChanged);
             // 
             // txtVHType
@@ -121,7 +121,7 @@ namespace Ayubo_Programming_Assignment
             this.txtVHType.Location = new System.Drawing.Point(204, 125);
             this.txtVHType.Name = "txtVHType";
             this.txtVHType.Size = new System.Drawing.Size(102, 20);
-            this.txtVHType.TabIndex = 17;
+            this.txtVHType.TabIndex = 4;
             this.txtVHType.TextChanged += new System.EventHandler(this.txtVHType_TextChanged);
             // 
             // btnPKClear
@@ -129,7 +129,7 @@ namespace Ayubo_Programming_Assignment
             this.btnPKClear.Location = new System.Drawing.Point(23, 379);
             this.btnPKClear.Name = "btnPKClear";
             this.btnPKClear.Size = new System.Drawing.Size(102, 23);
-            this.btnPKClear.TabIndex = 16;
+            this.btnPKClear.TabIndex = 13;
             this.btnPKClear.Text = "Clear";
             this.btnPKClear.UseVisualStyleBackColor = true;
             this.btnPKClear.Click += new System.EventHandler(this.btnPKClear_Click);
@@ -139,7 +139,7 @@ namespace Ayubo_Programming_Assignment
             this.btnPKUpdate.Location = new System.Drawing.Point(204, 336);
             this.btnPKUpdate.Name = "btnPKUpdate";
             this.btnPKUpdate.Size = new System.Drawing.Size(102, 23);
-            this.btnPKUpdate.TabIndex = 15;
+            this.btnPKUpdate.TabIndex = 11;
             this.btnPKUpdate.Text = "Update";
             this.btnPKUpdate.UseVisualStyleBackColor = true;
             this.btnPKUpdate.Click += new System.EventHandler(this.btnPKUpdate_Click);
@@ -149,7 +149,7 @@ namespace Ayubo_Programming_Assignment
             this.btnPKRetrieve.Location = new System.Drawing.Point(204, 379);
             this.btnPKRetrieve.Name = "btnPKRetrieve";
             this.btnPKRetrieve.Size = new System.Drawing.Size(102, 23);
-            this.btnPKRetrieve.TabIndex = 14;
+            this.btnPKRetrieve.TabIndex = 1;
             this.btnPKRetrieve.Text = "Retrieve";
             this.btnPKRetrieve.UseVisualStyleBackColor = true;
             this.btnPKRetrieve.Click += new System.EventHandler(this.btnPKRetrieve_Click);
@@ -249,7 +249,7 @@ namespace Ayubo_Programming_Assignment
             this.txtDrN.Location = new System.Drawing.Point(204, 255);
             this.txtDrN.Name = "txtDrN";
             this.txtDrN.Size = new System.Drawing.Size(102, 20);
-            this.txtDrN.TabIndex = 21;
+            this.txtDrN.TabIndex = 9;
             this.txtDrN.TextChanged += new System.EventHandler(this.txtDrN_TextChanged);
             // 
             // txtVhN
@@ -257,7 +257,7 @@ namespace Ayubo_Programming_Assignment
             this.txtVhN.Location = new System.Drawing.Point(204, 281);
             this.txtVhN.Name = "txtVhN";
             this.txtVhN.Size = new System.Drawing.Size(102, 20);
-            this.txtVhN.TabIndex = 22;
+            this.txtVhN.TabIndex = 10;
             this.txtVhN.TextChanged += new System.EventHandler(this.txtVhN_TextChanged);
             // 
             // txtPKRt
@@ -265,7 +265,7 @@ namespace Ayubo_Programming_Assignment
             this.txtPKRt.Location = new System.Drawing.Point(204, 99);
             this.txtPKRt.Name = "txtPKRt";
             this.txtPKRt.Size = new System.Drawing.Size(102, 20);
-            this.txtPKRt.TabIndex = 19;
+            this.txtPKRt.TabIndex = 3;
             this.txtPKRt.TextChanged += new System.EventHandler(this.txtPKRt_TextChanged);
             // 
             // label10
@@ -297,7 +297,7 @@ namespace Ayubo_Programming_Assignment
             this.btnExit.Location = new System.Drawing.Point(294, 1);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(34, 24);
-            this.btnExit.TabIndex = 51;
+            this.btnExit.TabIndex = 14;
             this.btnExit.Text = "X";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);

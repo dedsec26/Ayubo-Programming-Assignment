@@ -60,7 +60,7 @@ namespace Ayubo_Programming_Assignment
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(923, 24);
-            this.menuStrip1.TabIndex = 8;
+            this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // vehicleToolStripMenuItem
@@ -194,7 +194,7 @@ namespace Ayubo_Programming_Assignment
             this.btnExit.Location = new System.Drawing.Point(889, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(34, 24);
-            this.btnExit.TabIndex = 13;
+            this.btnExit.TabIndex = 1;
             this.btnExit.Text = "X";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
