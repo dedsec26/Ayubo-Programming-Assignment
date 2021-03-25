@@ -123,7 +123,12 @@ namespace Ayubo_Programming_Assignment
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult result = MessageBox.Show("Application Will be Closed!", "caption" , MessageBoxButtons.OKCancel);
+            if (result == DialogResult.OK)
+            {
+                Application.Exit();
+            }
+            
         }
     }
 }

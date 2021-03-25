@@ -128,21 +128,21 @@ namespace Ayubo_Programming_Assignment
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.viewToolStripMenuItem.Text = "View";
             this.viewToolStripMenuItem.Click += new System.EventHandler(this.viewToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.editToolStripMenuItem.Text = "Edit";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
             // addToolStripMenuItem
             // 
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.addToolStripMenuItem.Text = "Add";
             this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
@@ -159,21 +159,21 @@ namespace Ayubo_Programming_Assignment
             // viewToolStripMenuItem1
             // 
             this.viewToolStripMenuItem1.Name = "viewToolStripMenuItem1";
-            this.viewToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.viewToolStripMenuItem1.Size = new System.Drawing.Size(99, 22);
             this.viewToolStripMenuItem1.Text = "View";
             this.viewToolStripMenuItem1.Click += new System.EventHandler(this.viewToolStripMenuItem1_Click);
             // 
             // editToolStripMenuItem1
             // 
             this.editToolStripMenuItem1.Name = "editToolStripMenuItem1";
-            this.editToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.editToolStripMenuItem1.Size = new System.Drawing.Size(99, 22);
             this.editToolStripMenuItem1.Text = "Edit";
             this.editToolStripMenuItem1.Click += new System.EventHandler(this.editToolStripMenuItem1_Click);
             // 
             // addToolStripMenuItem1
             // 
             this.addToolStripMenuItem1.Name = "addToolStripMenuItem1";
-            this.addToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.addToolStripMenuItem1.Size = new System.Drawing.Size(99, 22);
             this.addToolStripMenuItem1.Text = "Add";
             this.addToolStripMenuItem1.Click += new System.EventHandler(this.addToolStripMenuItem1_Click);
             // 
@@ -196,14 +196,14 @@ namespace Ayubo_Programming_Assignment
             // dayTourToolStripMenuItem
             // 
             this.dayTourToolStripMenuItem.Name = "dayTourToolStripMenuItem";
-            this.dayTourToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dayTourToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.dayTourToolStripMenuItem.Text = "Day Tour";
             this.dayTourToolStripMenuItem.Click += new System.EventHandler(this.dayTourToolStripMenuItem_Click);
             // 
             // longTourToolStripMenuItem
             // 
             this.longTourToolStripMenuItem.Name = "longTourToolStripMenuItem";
-            this.longTourToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.longTourToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.longTourToolStripMenuItem.Text = "Long Tour";
             this.longTourToolStripMenuItem.Click += new System.EventHandler(this.longTourToolStripMenuItem_Click);
             // 

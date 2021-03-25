@@ -84,7 +84,7 @@ namespace Ayubo_Programming_Assignment
                 if (string.IsNullOrEmpty(txtModel.Text) | string.IsNullOrEmpty(txtDay.Text) | string.IsNullOrEmpty(txtDriver.Text) | string.IsNullOrEmpty(txtModel.Text) |
                     string.IsNullOrEmpty(txtMonth.Text) | string.IsNullOrEmpty(txtWeek.Text))
                 {
-                    MessageBox.Show("Please fill all feilds before updating");
+                    MessageBox.Show("Please fill in all the required feilds before updating.");
                 }
                 else
                 {

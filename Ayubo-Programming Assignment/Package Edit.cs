@@ -168,7 +168,7 @@ namespace Ayubo_Programming_Assignment
                 if (string.IsNullOrEmpty(txtPKRt.Text) | string.IsNullOrEmpty(txtMxDist.Text) | string.IsNullOrEmpty(txtMxDur.Text) | string.IsNullOrEmpty(txtXtrDist.Text) | 
                     string.IsNullOrEmpty(txtXtrDur.Text) | string.IsNullOrEmpty(txtDrN.Text) | string.IsNullOrEmpty(txtVhN.Text))
                 {
-                    MessageBox.Show("Please fill all feilds before updating");
+                    MessageBox.Show("Please fill in all the feilds before updating.");
                 }
                 else
                 {
@@ -177,7 +177,7 @@ namespace Ayubo_Programming_Assignment
                     SqlCommand sqlCommand = new SqlCommand(sql_update, sqlConnection);
                     sqlConnection.Open();
                     sqlCommand.ExecuteNonQuery();
-                    MessageBox.Show("Package rate successfully updated");
+                    MessageBox.Show("Package rate successfully updated.");
                     clear();
                     sqlConnection.Close();
                 }

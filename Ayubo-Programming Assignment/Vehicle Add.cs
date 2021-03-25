@@ -46,9 +46,10 @@ namespace Ayubo_Programming_Assignment
         {
             try
             {
-                if (string.IsNullOrEmpty(txtReg.Text))
+                if (string.IsNullOrEmpty(txtReg.Text) | string.IsNullOrEmpty(txtModel.Text) | string.IsNullOrEmpty(txtType.Text) | string.IsNullOrEmpty(txtDay.Text) | 
+                    string.IsNullOrEmpty(txtWeek.Text) | string.IsNullOrEmpty(txtMonth.Text) | string.IsNullOrEmpty(txtDriver.Text))
                 {
-                    MessageBox.Show("Please enter a valid Vehicle Registration Number");
+                    MessageBox.Show("Please fill in all the required fields before adding a new Vehicle.");
 
                 }
                

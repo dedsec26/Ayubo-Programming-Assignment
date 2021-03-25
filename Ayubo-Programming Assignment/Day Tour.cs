@@ -17,15 +17,30 @@ namespace Ayubo_Programming_Assignment
         SqlConnection sqlConnection = new SqlConnection("Data Source=Aflal-PC;Initial Catalog=ayubodrive;Integrated Security=True");
         private void clear()
         {
-            txtDrN.Clear();
-            txtMxDist.Clear();
-            txtMxDur.Clear();
             txtPKName.Clear();
             txtPKRt.Clear();
-            txtVhN.Clear();
             txtVHType.Clear();
+            txtMxDist.Clear();
             txtXtrDist.Clear();
+            //txtDrN.Clear();
+            //txtVhN.Clear();
+           //txtTdays.Clear();
+            txtTKm.Clear();
+            txtXtrKm.Clear();
+            //txtPKCost.Clear();
+            //txtNightCost.Clear();
+            txtKmCost.Clear();
+            //txtTotal.Clear();
+            txtEndRd.Clear();
+            txtMxDur.Clear();
             txtXtrDur.Clear();
+            txtCostXt.Clear();
+            txtKmCost.Clear();
+            txtNHrs.Clear();
+            txtXHrs.Clear();
+            txtTotalCost.Clear();
+
+
         }
         private void combo()
         {
@@ -45,8 +60,8 @@ namespace Ayubo_Programming_Assignment
             txtMxDur.Enabled = false;
             txtXtrDist.Enabled = false;
             txtXtrDur.Enabled = false;
-            txtDrN.Enabled = false;
-            txtVhN.Enabled = false;
+            //txtDrN.Enabled = false;
+            //txtVhN.Enabled = false;
             txtNHrs.Enabled = false;
             txtCostXt.Enabled = false;
             txtXHrs.Enabled = false;
@@ -81,8 +96,8 @@ namespace Ayubo_Programming_Assignment
                 txtMxDur.Text = dataReader["max_hours"].ToString();
                 txtXtrDist.Text = dataReader["ex_km_rate"].ToString();
                 txtXtrDur.Text = dataReader["ex_hours_rate"].ToString();
-                txtDrN.Text = dataReader["driver_night_rate"].ToString();
-                txtVhN.Text = dataReader["vehicle_night_rate"].ToString();
+                //txtDrN.Text = dataReader["driver_night_rate"].ToString();
+                //txtVhN.Text = dataReader["vehicle_night_rate"].ToString();
                 sqlConnection.Close();
                 
 
@@ -119,7 +134,7 @@ namespace Ayubo_Programming_Assignment
                 ts = end - start;
                 hours = ts.Hours;
                 txtNHrs.Text = hours.ToString();
-                max = Int16.Parse(txtMxDur.Text);
+                max = Int32.Parse(txtMxDur.Text);
                 excost = Double.Parse(txtXtrDur.Text);
                 if (hours > max)
                 {
@@ -258,6 +273,11 @@ namespace Ayubo_Programming_Assignment
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            clear();
         }
     }
 }

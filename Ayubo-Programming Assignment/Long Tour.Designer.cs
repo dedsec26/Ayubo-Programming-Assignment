@@ -418,9 +418,9 @@ namespace Ayubo_Programming_Assignment
             // 
             // txtKmCost
             // 
-            this.txtKmCost.Location = new System.Drawing.Point(143, 71);
+            this.txtKmCost.Location = new System.Drawing.Point(149, 76);
             this.txtKmCost.Name = "txtKmCost";
-            this.txtKmCost.Size = new System.Drawing.Size(100, 20);
+            this.txtKmCost.Size = new System.Drawing.Size(145, 20);
             this.txtKmCost.TabIndex = 2;
             // 
             // groupBox2
@@ -434,18 +434,18 @@ namespace Ayubo_Programming_Assignment
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txtKmCost);
-            this.groupBox2.Location = new System.Drawing.Point(679, 12);
+            this.groupBox2.Location = new System.Drawing.Point(3, 281);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(258, 184);
+            this.groupBox2.Size = new System.Drawing.Size(302, 178);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Total Cost";
             // 
             // btnTotal
             // 
-            this.btnTotal.Location = new System.Drawing.Point(6, 139);
+            this.btnTotal.Location = new System.Drawing.Point(12, 144);
             this.btnTotal.Name = "btnTotal";
-            this.btnTotal.Size = new System.Drawing.Size(237, 23);
+            this.btnTotal.Size = new System.Drawing.Size(282, 23);
             this.btnTotal.TabIndex = 4;
             this.btnTotal.Text = "Calculate Total Cost";
             this.btnTotal.UseVisualStyleBackColor = true;
@@ -453,30 +453,30 @@ namespace Ayubo_Programming_Assignment
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(143, 97);
+            this.txtTotal.Location = new System.Drawing.Point(149, 102);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(100, 20);
+            this.txtTotal.Size = new System.Drawing.Size(145, 20);
             this.txtTotal.TabIndex = 3;
             // 
             // txtNightCost
             // 
-            this.txtNightCost.Location = new System.Drawing.Point(143, 45);
+            this.txtNightCost.Location = new System.Drawing.Point(149, 50);
             this.txtNightCost.Name = "txtNightCost";
-            this.txtNightCost.Size = new System.Drawing.Size(100, 20);
+            this.txtNightCost.Size = new System.Drawing.Size(145, 20);
             this.txtNightCost.TabIndex = 3;
             // 
             // txtPKCost
             // 
-            this.txtPKCost.Location = new System.Drawing.Point(143, 19);
+            this.txtPKCost.Location = new System.Drawing.Point(149, 24);
             this.txtPKCost.Name = "txtPKCost";
-            this.txtPKCost.Size = new System.Drawing.Size(100, 20);
+            this.txtPKCost.Size = new System.Drawing.Size(145, 20);
             this.txtPKCost.TabIndex = 3;
             this.txtPKCost.TextChanged += new System.EventHandler(this.txtPKCost_TextChanged);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(3, 104);
+            this.label12.Location = new System.Drawing.Point(9, 109);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(55, 13);
             this.label12.TabIndex = 1;
@@ -485,7 +485,7 @@ namespace Ayubo_Programming_Assignment
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 78);
+            this.label7.Location = new System.Drawing.Point(9, 83);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(100, 13);
             this.label7.TabIndex = 1;
@@ -494,7 +494,7 @@ namespace Ayubo_Programming_Assignment
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 26);
+            this.label11.Location = new System.Drawing.Point(9, 31);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(74, 13);
             this.label11.TabIndex = 1;
@@ -503,7 +503,7 @@ namespace Ayubo_Programming_Assignment
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 52);
+            this.label5.Location = new System.Drawing.Point(9, 57);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 13);
             this.label5.TabIndex = 1;
@@ -511,9 +511,9 @@ namespace Ayubo_Programming_Assignment
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(685, 221);
+            this.btnClear.Location = new System.Drawing.Point(316, 425);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(100, 23);
+            this.btnClear.Size = new System.Drawing.Size(347, 23);
             this.btnClear.TabIndex = 9;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -523,7 +523,7 @@ namespace Ayubo_Programming_Assignment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1005, 352);
+            this.ClientSize = new System.Drawing.Size(686, 474);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox4);
