@@ -218,7 +218,7 @@ namespace Ayubo_Programming_Assignment
                             {
                                 days = Int16.Parse(txtTdays.Text);
 
-                                if (current > max)
+                                if (current > (max * days))
                                 {
                                     extra = current - (max * days);
                                     finex = extra * excost;
@@ -233,6 +233,14 @@ namespace Ayubo_Programming_Assignment
                                     txtKmCost.Text = finex.ToString();
                                     extra = 0;
                                     txtXtrKm.Text = extra.ToString();
+
+                                }
+                                else if (current < (max * days))
+                                {
+                                    extra = 0;
+                                    finex = 0;
+                                    txtXtrKm.Text = extra.ToString();
+                                    txtKmCost.Text = finex.ToString();
 
                                 }
                                 else

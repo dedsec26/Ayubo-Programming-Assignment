@@ -213,7 +213,7 @@ namespace Ayubo_Programming_Assignment
                     txtXtrKm.Text = extra.ToString();
                     txtKmCost.Text = finex.ToString();
                 }
-                else if (current < 0)
+                else if (current < 0 | current < max)
                 {
                     current = 0;
                     txtTKm.Text = current.ToString();
@@ -223,7 +223,7 @@ namespace Ayubo_Programming_Assignment
                     txtXtrKm.Text = extra.ToString();
 
                 }
-                else
+                else 
                 {
                     finex = 0;
                     txtKmCost.Text = finex.ToString();
