@@ -191,7 +191,7 @@ namespace Ayubo_Programming_Assignment
                     }
                     else
                     {
-                        start = Int16.Parse(txtStRd.Text);
+                        start = Int32.Parse(txtStRd.Text);
                     }
                     if ((string.IsNullOrEmpty(txtEndRd.Text)) | (string.IsNullOrWhiteSpace(txtEndRd.Text)))
                     {
@@ -199,7 +199,7 @@ namespace Ayubo_Programming_Assignment
                     }
                     else
                     {
-                        end = Int16.Parse(txtEndRd.Text);
+                        end = Int32.Parse(txtEndRd.Text);
                         if ((string.IsNullOrWhiteSpace(txtMxDist.Text)) | (string.IsNullOrEmpty(txtMxDist.Text)))
                         {
                             MessageBox.Show("Please Select a Package Before Calculating Distance");

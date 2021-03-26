@@ -124,7 +124,7 @@ namespace Ayubo_Programming_Assignment
             this.btnInsert.Location = new System.Drawing.Point(10, 255);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(102, 23);
-            this.btnInsert.TabIndex = 2;
+            this.btnInsert.TabIndex = 7;
             this.btnInsert.Text = "Insert";
             this.btnInsert.UseVisualStyleBackColor = true;
             this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
@@ -134,7 +134,7 @@ namespace Ayubo_Programming_Assignment
             this.txtModel.Location = new System.Drawing.Point(135, 78);
             this.txtModel.Name = "txtModel";
             this.txtModel.Size = new System.Drawing.Size(102, 20);
-            this.txtModel.TabIndex = 3;
+            this.txtModel.TabIndex = 1;
             this.txtModel.TextChanged += new System.EventHandler(this.txtModel_TextChanged);
             // 
             // txtType
@@ -142,7 +142,7 @@ namespace Ayubo_Programming_Assignment
             this.txtType.Location = new System.Drawing.Point(135, 104);
             this.txtType.Name = "txtType";
             this.txtType.Size = new System.Drawing.Size(102, 20);
-            this.txtType.TabIndex = 3;
+            this.txtType.TabIndex = 2;
             this.txtType.TextChanged += new System.EventHandler(this.txtType_TextChanged);
             // 
             // txtDay
@@ -158,7 +158,7 @@ namespace Ayubo_Programming_Assignment
             this.txtWeek.Location = new System.Drawing.Point(135, 156);
             this.txtWeek.Name = "txtWeek";
             this.txtWeek.Size = new System.Drawing.Size(102, 20);
-            this.txtWeek.TabIndex = 3;
+            this.txtWeek.TabIndex = 4;
             this.txtWeek.TextChanged += new System.EventHandler(this.txtWeek_TextChanged);
             // 
             // txtMonth
@@ -166,7 +166,7 @@ namespace Ayubo_Programming_Assignment
             this.txtMonth.Location = new System.Drawing.Point(135, 182);
             this.txtMonth.Name = "txtMonth";
             this.txtMonth.Size = new System.Drawing.Size(102, 20);
-            this.txtMonth.TabIndex = 3;
+            this.txtMonth.TabIndex = 5;
             this.txtMonth.TextChanged += new System.EventHandler(this.txtMonth_TextChanged);
             // 
             // txtDriver
@@ -174,7 +174,7 @@ namespace Ayubo_Programming_Assignment
             this.txtDriver.Location = new System.Drawing.Point(135, 208);
             this.txtDriver.Name = "txtDriver";
             this.txtDriver.Size = new System.Drawing.Size(102, 20);
-            this.txtDriver.TabIndex = 3;
+            this.txtDriver.TabIndex = 6;
             this.txtDriver.TextChanged += new System.EventHandler(this.txtDriver_TextChanged);
             // 
             // btnClear
@@ -182,7 +182,7 @@ namespace Ayubo_Programming_Assignment
             this.btnClear.Location = new System.Drawing.Point(135, 255);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(102, 23);
-            this.btnClear.TabIndex = 2;
+            this.btnClear.TabIndex = 8;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -192,7 +192,7 @@ namespace Ayubo_Programming_Assignment
             this.txtReg.Location = new System.Drawing.Point(135, 52);
             this.txtReg.Name = "txtReg";
             this.txtReg.Size = new System.Drawing.Size(102, 20);
-            this.txtReg.TabIndex = 3;
+            this.txtReg.TabIndex = 0;
             this.txtReg.TextChanged += new System.EventHandler(this.txtModel_TextChanged);
             // 
             // label11
@@ -202,9 +202,9 @@ namespace Ayubo_Programming_Assignment
             this.label11.Font = new System.Drawing.Font("Roboto Medium", 13F, System.Drawing.FontStyle.Bold);
             this.label11.Location = new System.Drawing.Point(53, 9);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(142, 22);
+            this.label11.Size = new System.Drawing.Size(133, 22);
             this.label11.TabIndex = 54;
-            this.label11.Text = "EDIT PACKAGE";
+            this.label11.Text = "ADD VEHICLE";
             // 
             // btnExit
             // 
@@ -214,7 +214,7 @@ namespace Ayubo_Programming_Assignment
             this.btnExit.Location = new System.Drawing.Point(216, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(34, 24);
-            this.btnExit.TabIndex = 53;
+            this.btnExit.TabIndex = 9;
             this.btnExit.Text = "X";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -244,6 +244,7 @@ namespace Ayubo_Programming_Assignment
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmVehicleAdd";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Vehicles";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
